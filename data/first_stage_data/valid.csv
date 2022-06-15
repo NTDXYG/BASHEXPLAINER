@@ -1,0 +1,1060 @@
+code,nl
+cal -h,print current month calendar without highlight of a current date
+find Path -type f -print0 | xargs -0 -i -I {} cat {} {} | grep Regex,search for _REGEX in all file under _FILE directori ensur white space safeti in filenam
+input_prog 2>&1 | tee /dev/tty | my_editor,write output of _REGEX to standard output and error on consol and as input to command _REGEX
+grep -v Regex File | cut -d Regex -f Number | nl -w Quantity -s Regex,delet line _NUMBER in number file _REGEX and number
+find Path ! -perm -Permission,find file and directori that not write permiss for group or other
+diff <( echo Regex ) <( echo Regex ),compar text _REGEX and _REGEX line by line
+tree -d -L Number -i --noreport,print directori in current directori as a list with no report inform
+find Path -name Regex -type d,find all directori name _REGEX in entir file system
+find Path -exec echo Regex {} \;,find all file in directori tree _REGEX
+head --lines -Quantity File,remov last n line from _FILE
+find Path -name Regex -size Size -delete,find file in current directori tree whose name begin with _REGEX and whose size is _NUMBER and remov them
+echo $( ls $( pwd ) ),list directori content of current work directori
+ls -d File,list all subdirectori in current directori with a trail slash
+find Path -perm Permission,find all _NUMBER permiss file and directori under current directori tree
+"octave -q --eval printf (""%f\n"", [0:0.1:pi/2])|nl|tee x.txt",calcul valu of interv from _NUMBER to _FILE with a step of _NUMBER add a line number and write output to standard output and _FILE
+find Path -name Regex -print0 | xargs -0 -n Quantity -I {} gzip -d {},find and uncompress all file in current directori tree end in _FILE
+find Path -exec grep -q Regex {} \; -print,search for word _REGEX in all file in current folder
+echo Regex | xargs -I {} gzip -9 {},compress all file with _FILE extens under current directori
+chown Regex File,chang owner of _REGEX to _REGEX
+find Path -type f -print0 | xargs -0 -I {} sed -i Program File {},find all regular file in current folder and replac a word in all these file
+sort File -o File,sort line of file _FILE and chang it in-plac
+find . -maxdepth 1 -type d -print0 | xargs -0 -I {} sh -c echo -e $(find {} | wc -l) {} | sort -n,print list of top-level subfold in a current folder sort by number of contain file
+find Path -iname Regex -exec bash -c rm -r -f {} \;,find ani file or directori call _FILE under current directori and run a recurs delet command on each one
+find Path -type f -print | xargs -I {} grep -i -l Regex {},list file in _FILE directori tree contain text _FILE
+find . -xdev -print0 | cpio -oa0V | gzip > path_to_save.cpio.gz,find all file and directori under current directori without cross over to other partit and archiv them into _FILE
+du -h -s -x File | sort -r -h | head - Quantity,find _NUMBER largest file in current directori and it subdirectori
+find Path -name Regex,display all _FILE script in folder _FILE
+rsync -a -v -z -r -u --delete-excluded File File,archiv _DIRECTORY on host _REGEX to local directori _DIRECTORY and skip file that are newer in destin delet ani file in destin not in sourc and compress data dure transmiss
+find Path -type f -mmin -Quantity,find all regular file in and below home directori that been modifi in _TIMESPAN
+"awk {gsub(/^[ \t]+|[ \t]+$/,""""); print;} in.txt | hexdump -C | less",remov lead and trail space from line in file _FILE interact page through a hexdump of result
+history | awk Program,print histori with first field remov
+awk Program Program,display inputfil all on one line
+find Path -type d | sed -r Program,display all directori in current folder and creat a skeleton of make directori command with all these folder
+find Path -type l -lname Regex,find find symlink point to _FILE in entir file system
+find Path -type d -exec chmod Permission {} \;,chang everi directori under _DIRECTORY to permiss _NUMBER
+sort -n File,numer sort each line in file _REGEX and print result to consol
+find Path -type f -atime +Timespan -exec rm {} \;,delet all file that not been access in _TIMESPAN
+mount Regex Regex Directory,mount partit with label _REGEX on _FILE
+find Path -name Regex -exec grep -i Regex {} \; -print,find pattern text ignor letter case in all _FILE file print match string and name of file with that string
+comm -2 -3 <( sort File ) <( sort File ),print line in sort content of _REGEX that are not in sort content of _REGEX
+find Path -type f -exec chmod Permission {} +,chang file permiss on all regular file within a directori
+find Path -type f ! -name Regex -exec ln -s File Regex \;,creat symbol link in current directori for all file exclud _REGEX locat under _FILE directori tree
+find . -name *\?* > output.txt,find file with a question mark in name and save output as a file
+find Path -group Regex,print all file on system own by group _REGEX
+"echo hey hey, we're the monkees | tee >(gzip --stdout > my_log.gz)",write _REGEX to standard output and as input to _FILE
+find Path -exec grep -l Regex {} \;,search file from current directori tree for _REGEX
+find Path -type d -exec chmod Permission {} +,find all directori under htdoc directori and set permiss to _NUMBER
+find . -name *.py -type f > output.txt,save list of all _FILE file under and below current directori to _FILE
+rsync -a -z File File,archiv preserv permiss and ownership file in _DIRECTORY on host _FILE to local _DIRECTORY
+mkdir Directory,make directori _FILE
+find Path -maxdepth Quantity -name Regex,find passwd file under root and _NUMBER level down
+ssh -q Regex command,login to _REGEX and creat file _REGEX if it not exist
+rm File File,recurs remov all file like _REGEX and _FILE from _DIRECTORY folder
+tar -t -f File | cut -d Regex -f Number | uniq,set variabl _REGEX to list of top-level directori and file contain in tar archiv specifi by variabl file
+find Path -name Regex,search everywher for hidden file _FILE
+find Path -name Regex -prune,find all file and directori name _REGEX without descend into directori with same name under current directori tree
+find Path -type f -name Regex -exec sed -i Program {} +,replac word foo to bar in current folder in all regular file contain word _REGEX in name
+find / -size 0 -ok rm { } ;,delet all empti file in file system after user confirm
+find Path -type d -name Regex | sort | tail -n +Quantity | xargs -I {} echo Regex {},find all _REGEX directori under _DIRECTORY and print all but first _NUMBER append with string _REGEX
+find Path -type f -name Regex -exec mv {} File \;,find all file in current folder with name _REGEX and move them to folder _REGEX
+echo $( sleep Timespan ),wait _TIMESPAN and print _REGEX
+grep Regex File | cut -d Regex -f Number | tr Regex Regex,search _REGEX in _FILE take _REGEX colon separ field replac comma with newlin and save result to variabl _REGEX
+find Path -newermt Regex,find file modifi at least _TIMESPAN in futur
+find Path -type f -iregex Regex -mtime +Timespan -exec rm {} \;,delet all file under _FILE directori tree with _FILE or _FILE extens that were modifi more that _TIMESPAN ago
+find Path -type d -exec mkdir Directory \;,copi directori hierarchi from _REGEX to _REGEX
+find Path -user Regex -exec chown -h Regex {} \;,chang user ownership to _REGEX for file with _PERMISSION
+rsync --recursive File File,recurs copi _REGEX to _FILE
+pstree -ap `pidof cron`,print process tree of a cron process with command argument and process id number
+mktemp -p Directory,creat temporari file in a current folder and save path to it in _REGEX variabl
+cd $( find Path -name Regex -printf '%h\n' ),search for _FILE under current directori and go to directori contain it
+find Path -name Regex | grep Regex | xargs -i -I {} cp -p {} File {},copi all file under current folder like _FILE with _REGEX in path to root of current folder preserv mode ownership and timestamp attribut
+find Path -type f -exec sed -i Program {} \;,replac _REGEX with _REGEX in all file under current directori
+find Path | awk -F Regex Program,find all file and directori under current directori and print onli _REGEX field from output delimit by _DIRECTORY
+find Path ! -name Regex -delete,delet all file in _FILE folder except _FILE
+which Regex,print full path of command _FILE
+find Path -name Regex -exec grep -I -w Regex {} + | grep -E -v Regex,search current directori for file whose name start with _REGEX ignor svn git and _FILE file
+find /usr -type f | samefile -g 10000 >usr.dups,find all ident file in _FILE directori tree that are bigger than _SIZE and write result to _FILE
+find . -name my.txt 2>/dev/null,find all instanc of a file in current folder and discard error
+find Path -iname Regex -exec echo Regex {} \;,find all _FILE file and directori under current directori and print _REGEX for each of them where _REGEX is expand to file or directori path
+find Path -type f,find all file under _REGEX
+"find Path -name Regex -printf ""%p:%T@\n"" | sort -t Regex -k Number",list all file with name _REGEX and modif time under current directori sort by oldest modifi to newest modifi
+ssh -o UserKnownHostsFile=/dev/null Regex,connect to host _REGEX as user _REGEX by forc host key confirm
+find /path/to/dir1 -printf %U %G %m %p\n > /tmp/dir1.txt,print _PERMISSION of owner _PERMISSION of group permiss bit and path into _FILE for all file and directori under _FILE
+./aaa.sh |& tee -a log,write standard output and error to consol and append to file _FILE
+"find Path -type d -printf ""%T@\n"" | cut -f Number -d Regex | sort -n -r",find all directori under _REGEX take first field as delimit _REGEX from timestamp and revers sort them numer
+echo -e Regex | xargs -I {} touch {},creat an empti file with a carriag return charact in it name
+find Path -iname Regex,display all file in folder _DIRECTORY which start with word _REGEX
+grep -v Regex File | nl -n ln,remov line match _REGEX from _FILE and add left-justifi line number
+find . -name * -type f -exec dos2unix {} ;,convert all regular file in current folder from dos to unix format
+find Path -name Regex,search current directori recurs for _FILE file whose name begin with _REGEX
+shopt -s globstar nullglob,set shell option _REGEX and _REGEX
+find Path -type type_descriptor,find file by type
+tmux show-environment -t sessname | grep RBENV,check if _REGEX variabl is defin in tmux session _REGEX environ
+find Path -type f -exec chmod Permission {} \;,set permiss of all file under _FILE to _NUMBER
+find Path -cmin -Quantity | less -R,find all file modifi less than _TIMESPAN ago and page interact through output
+find Path -name Regex -prune -or -name Regex -prune -or -name Regex -prune -or -print0 | xargs -0 -I {} grep -I -R Regex {},search for _REGEX in all _FILE file under current directori without descend into _FILE and _FILE directori
+read -p $( echo -e Regex ) Regex,read a line from standard input into variabl _REGEX with escap prompt _REGEX
+grep -r Regex File,find match text in defin path recurs but not follow symlink
+find Path Path -name Regex -type f -ls,find file in _NUMBER differ directori have _REGEX string and list them
+chown Regex File,chang owner and group of _REGEX to _REGEX
+find Path -type f -size +Size -exec ls -l -h {} \; | awk Program,list file greater than _SIZE under _FILE and print time and size on stdout
+cat File | xargs -i -I {} dig -x {} Regex {},send revers request to get domain name for each address in _REGEX list
+"find Path -name Regex -type f -printf '""%p""\n' | xargs -I {} rm -f {}",remov all _FILE file in current directori tree
+... | column -s$\t -t,format output of _FILE as a tab separ tabl
+find Path -path Regex -prune -or -name Regex -print -exec grep -H -n Regex {} \;,find all _REGEX file in _REGEX path exclud _FILE and search for regex expand by _REGEX in those file
+cat File | ,pipe content of _FILE file to input of command _REGEX
+"find Path ! -type d -printf ""%T@ %p\n"" | sort -n | head -n Quantity",find oldest normal file in current directori and display with it timestamp
+find Path -type d -name Regex -prune -or -name Regex,exclud directori from find command
+find Path -perm Permission,find file in current directori tree whose permiss are _NUMBER
+read -p Regex Regex,read a line from standard input into variabl _REGEX with prompt _FILE
+find Path -type f -name Regex,find all perl file in current folder
+od -t uI -N File File | awk Program,save a random _SIZE unsign integ from _FILE to variabl _REGEX
+find Path -type d,display all directori in folder symfoni
+find Path -name Regex,search for all file in current directori recurs whose name begin with _REGEX
+find Path -maxdepth Quantity -type f | md5sum,calcul _REGEX sum of list of file in current directori
+find Path -type f -iname Regex -delete,find all _FILE file start from current directori and delet them
+readlink -f File,convert relat path _FILE into absolut path with resolv symbol link
+echo Regex | cut -d Regex -f Number,print first field from semicolon-sepr line _REGEX
+find Path -name Regex -exec grep Regex {} \;,search for _REGEX in all file with _FILE extens under _FILE directori
+find Path -type f -print0 | xargs -0 -I {} grep -H Regex {},search file from current directori tree for text _REGEX
+who File Regex | awk Program,print ip address of ssh session
+for i in `find . -exec echo {} ;`; do cmd1 $i; cmd2 $i; done,run _REGEX and _REGEX on each file or directori under current directori with file or directori path as a posit argument to those command
+find Path -type f -perm Permission -print,search for all regular file in folder _FILE which permiss _NUMBER
+find Path -maxdepth Quantity -type f -name Regex -exec mv {} File \; -or -name Regex -exec mv {} File \;,find all regular file in current folder which end with _REGEX or which begin and end with _REGEX and and move them to temp folder
+find Path -exec grep Regex {} \;,search file from current directori tree for _REGEX
+rsync -a -H -v -z File File,archiv _DIRECTORY to _FILE preserv hard link and compress data dure transmiss
+find Path -size +Size -print,find all file in current folder which are bigger than _SIZE
+find . -type d -print0 | tar cf directory-structure.tar --null --files-from - --no-recursion,archiv directori structur under current directori into _FILE
+ls -t -p | grep -v Regex | tail -n +Quantity | xargs -I {} rm -- {},remov all file but _REGEX newest one from current folder
+find Path -type d,find all directori under and below _REGEX
+find Path -perm Permission,search for file which are writabl by somebodi
+find Path -type f -name Regex -exec chmod Permission {} \;,chang permiss to _NUMBER recurs for _FILE file
+"find . -type f -exec bash -c for f do d=${f%/*} b=${f##*/} nb=${b//[^A-Za-z0-9._-]/_}; [[ $b = ""$nb"" ]] || echo mv ""$f"" ""$d/$nb""; done _ {} +",renam file from current directori tree to ascii standard
+find Path -name Regex -exec grep Regex {} + | wc -l,find all file name _REGEX
+yes 0 | script -c ispell text.txt /dev/null,automat spell check file _FILE use _REGEX command
+find Path -name Regex,find all _REGEX file and directori under _FILE directori
+[[ $(find . -maxdepth 1 -cmin +60 -name file) =  ]] && echo old,check if file name _REGEX in _NUMBER level down current directori whose status were chang more than _TIMESPAN ago were not found and print old if that 's true
+find Path -name Regex | awk Program,find all _FILE file in current folder and move them to anoth directori
+find Path -type f ! -name Regex -exec gzip {} \;,find all file exclud _FILE file in current directori tree and compress them with gzip
+find Path -name Regex | grep -n Regex,search for _REGEX in all _REGEX file under current directori and show match line with line number
+su - jenkins -s /bin/bash,run a shell as user jenkin
+find Path Path,find all file in current folder which are readabl
+find Path | xargs -I {} grep Regex -l -s {},search file from current directori tree for _REGEX
+watch echo -e Regex,execut _REGEX everi _TIMESPAN
+y=$(bash -c read -n 1 c; echo \$c),read a singl charact from standard input and save to variabl _REGEX
+mount | grep $( readlink -f File ),check if a drive with uuid _REGEX is mount
+find Path -newer File,find all file in current directori which been modifi after a file
+find Path -type f -daystart -mtime -Timespan,find all file that been modifi in _TIMESPAN
+mkdir -p Directory,creat intermedi directori _REGEX and _REGEX as requir and creat _REGEX
+"cat filename | python -cfrom fileinput import input; print sum(map(int, input()))",mathemat sum all line in _REGEX
+find Path -type d -name Regex -exec touch File \;,creat an empti file in each directori name _REGEX under current directori
+find Path -daystart -mtime -Timespan,find all file that been modifi exact _TIMESPAN ago
+find Path -name Regex | xargs -I {} grep -n Regex {},search for _REGEX in all file with _FILE extens under current directori tree and show match line with line number and filenam
+find Path \( -perm Permission -or -perm Permission \) -print | diff File File,search for all file in entir file system which either _PERMISSION or _PERMISSION enabl and find of diff of these file with file _FILE
+ping Regex | awk Program,print a time stamp for each success ping to _REGEX
+find Path -not -name Regex -print0 | xargs -0 -I {} chown Regex {},chang owner of all file in directori tree _REGEX exclud file _REGEX to _REGEX
+find Path -name Regex,print a list of all _FILE file from current directori tree
+find Path -type f -size +Size -exec ls -l -h {} \; | awk Program,find file on system that are bigger than _SIZE
+find Path -path Regex -prune -or -type f,print list of file in current directori tree skip git file
+find Path -type f ! -newer File ! -samefile Regex -exec rm {} +,find all regular file under _REGEX directori tree which been modifi befor file _REGEX exclud file _REGEX and delet them
+tmux -2 new-session -s name another_script.sh $1,start tmux session _REGEX forc tmux to assum termin support _NUMBER colour and execut defin script within
+find Path -name Regex -mtime +Timespan -print0 | xargs -0 -I {} rm {},delet all _FILE file under current directori that are older than _TIMESPAN
+dirname $( readlink -f File ),put absolut directori path to current script to _REGEX variabl
+find Path -mtime -Timespan -print,find all file in file system which been modifi in _TIMESPAN
+find Path -type f \( -name Regex -or -name Regex \),find all shell script or perl file in current directori
+wc File,print newlin word and byte count for each _FILE in a current folder
+rmdir Directory Directory,remov empti folder _REGEX and _REGEX
+echo -e $( ) | grep -v $( date +%Y-%m-%d ) | tail - Quantity,filter out current date in current time zone from _REGEX and _REGEX represent of current date and show last one
+"sed Program File | join -a Quantity -e Regex -j Regex -o 1.1,2.2 File File",for each line in _FILE output line ad _REGEX if same line appear in _FILE and _REGEX otherwis line in _FILE be in same order as appear in _FILE
+cd $( which Regex | xargs -I {} dirname {} ),chang directori to directori contain execut file of command _REGEX
+tail -n +Quantity File,print _FILE start at line _NUMBER
+w | sort,print _FILE in user in sort order
+"mount -o remount,rw -t yaffs2 Regex Regex",remount _FILE on _FILE with read and write permiss
+mkdir -p -v Directory,make directori to _FILE as need and print a messag for each creat directori
+ssh -q $HOST [[ -f $FILE_PATH ]] && echo File exists || echo File does not exist;,check if _REGEX exist on _REGEX
+find Path -name Regex -exec grep -i Regex {} \;,search _FILE file from _DIRECTORY directori tree for todo line
+chmod +Permission File,add execut permiss to all file end in _FILE
+od -A n -t d -N File File,print _SIZE from _FILE as a sign decim valu and no address radix
+info -O Regex,open gawk info manual and goe to command-lin option node
+tail -n $( grep -n Regex File | head -n Quantity | cut -d Regex -f Number ) File,print line contain termin and everyth after in _REGEX
+git diff --name-only | xargs dirname | uniq,get list of folder contain file with chang
+find Path -name Regex | xargs -I {} rm {},remov all _FILE file from _FILE directori tree
+find . -depth -name *.zip -exec /usr/bin/unzip -n {} ; -delete,find all _FILE file in current directori tree and unzip them delet archiv on success
+find . -type f -exec perl -wnl -e /\s1$/ and print {} +,search for regex _REGEX in all file under current directori
+find Path -name Regex -delete,delet all text file start with name _REGEX in file system
+"mkdir $( seq -f ""$HOME/Labs/lab4a/folder%03g"" Number )",make _NUMBER directori name _FILE follow by a _NUMBER width _NUMBER pad number from _NUMBER to _NUMBER
+find . -name *.JPG -exec convert {} -resize 50% {} ;,find all _FILE file in current folder and resiz them to _REGEX of origin size
+sort -n -k Number,numer sort standard input by second word of each line
+od -a File,display a name charact dump of _FILE
+find Path -type d -exec chmod Permission {} \;,find all directori under current directori and set read-write-execut permiss for owner read-execut permiss for group and other for those directori
+ls -1 | wc -l,count all top-level file in a current folder
+find Path -maxdepth Quantity -not -samefile Regex,find all file under current directori that are not same file as _FILE
+find Path -name Regex -ls,list all _FILE file in current directori tree
+find / -maxdepth 1 -xdev -type f -exec grep -Zli stringtofind {} + | parallel -0 sed '/./d' {},delet all content form file that contain case insensit regex _REGEX in maximum _NUMBER level down _DIRECTORY directori exclud other partit
+alias pwd=echo -n $(/bin/pwd) | pbcopy,set alia _REGEX for command _REGEX
+cp $( ls | grep -v Regex ) File,copi all file in current directori except those contain _REGEX to _FILE
+find xargstest/ -name file?? | xargs myscript.sh,process all file match pattern _REGEX
+find Path -regex Regex,find all _FILE file in current folder use regular express
+find -name Regex Path {} Path Path,creat backup of all text file present in current folder
+find Path -type d -exec chmod Permission {} \;,chang permiss to _NUMBER for all directori in _FILE directori tree
+find Path -type f -size +Size -print0 | xargs -0 -I {} rm {},locat larg file in _DIRECTORY for _REGEX
+find Path -type f -name Regex | cut -c Number | nl,remov first _NUMBER charact of each _FILE filenam in _FILE directori tree and number output
+yes | rm -i File,remov all file and directori in current directori by answer with _REGEX to all prompt
+find . -name *.doc | while read i; do antiword -i 1 ${i} >${i/doc/txt} && rm ${i}; done,convert _FILE file in current directori tree to _FILE format and remov origin file
+rsync -r -t -u -v File File,synchron _FILE with file in _DIRECTORY if file are newer
+find Path -type f -exec basename {} \;,find all file in _FILE and print onli filenam
+find Path -type d -name Regex,find all directori under current directori whose name are _NUMBER charact long
+find Path -type f -mtime +Timespan -mtime -Timespan -exec rm {} \;,find all file that were modifi between _NUMBER to _TIMESPAN ago in home directori and delet
+find Path -ctime Timespan -type f,find all file that been chang exact _TIMESPAN ago
+find Path -mtime +Timespan -print,find all file and directori under _FILE directori tree that not been modifi in _TIMESPAN
+hostname -I | awk Program,print ip address of host name
+tmux,open new tmux session
+find Path -nouser | xargs -0 -I {} rm {},delet all file not own by valid user
+find Path -name Regex,find all _FILE file and directori under current directori
+groups Regex | grep -q Regex,return _NUMBER if user _REGEX belong to group _REGEX
+uname -v | grep -o Regex,retriev onli build number of current kernel ie _REGEX
+find Path -type f -exec ln -s {} \;,creat symlink to all _FILE file with same name in current directori
+cat File | rev | cut -d Regex -f Number | rev,get second-to-last comma-separ field of each line in _FILE
+n_jobs=`expr $(jobs | wc -l)`,print number of job
+rsync -a -v File File,archiv directori specifi by variabl _REGEX to current directori
+ls -l -R File | tee -a File,print long recurs list of all content of a root folder append output to _FILE
+find Path -type f -maxdepth Quantity | more,list all entri name contain direct by directori _REGEX in current directori paus for user input at each page
+cat File | tr -c -d Regex | head -c Quantity,print first _NUMBER hexadecim charact from _FILE
+diff -u Quantity File File,compar _REGEX and _FILE line by line output _NUMBER line of unifi context and print _FILE function chang is in
+df -h File,print file system disk space usag in human readabl format of root filesystem
+chown -R Regex File File,recurs chang owner and group of _FILE and _NUMBER to _REGEX
+find Path -type f -name Regex -print0 | xargs -0 -I {} sed -i -e Program {},replac occurr of _REGEX with _REGEX onc per each line of _FILE file from current directori tree
+ps x -o %p %r %y %x %c ,show all process that a tti in format _REGEX
+sudo yum clean all,remov all cach yum data from a system
+find Path -name Regex | grep -v Regex | grep -v Regex | grep -v Regex,list all javascript file which whole name not contain excludeddir or _REGEX or _REGEX
+echo Regex | tr Regex Regex | tail -n Quantity,print last space separ word from _REGEX
+objdump -x `which tail`,display all avail header inform for execut file of command _REGEX
+find Path \( ! -name Regex -and ! -name Regex \) | xargs -I {} cp -p {} File,find file not match pattern _REGEX and _REGEX in name under _REGEX and copi them to _REGEX
+find Path -type f -mmin -Quantity -print0 | xargs -r -0 -I {} ls -l {},list all regular file from current directori tree that were modifi less than _TIMESPAN ago
+"find Path -name Regex -printf ""%p\0"" -printf ""newdir/%P\0"" | xargs -0 -L Quantity -I {} cp -n {}",copi all file name _FILE in directori _REGEX to directori _REGEX
+find Path -user Regex,find all file and directori under current directori tree that belong to user _REGEX
+find Path -exec echo {} +,find all file and directori under current directori and print path
+find Path -type f -perm -Permission,find file with _NUMBER permiss in entir file system
+tar -I File -c -f File File,creat an archiv use _REGEX as a compress program
+ | md5,find _REGEX of _NUMBER
+find Path -size -Size,find all file in current folder which are less than _SIZE
+basename Regex Regex,remov contain directori and suffix _FILE from specifi path output result
+rsync --exclude Regex --exclude Regex File File,error need to add _REGEX or _REGEX for recurs copi
+mv $( ls ) File,move all file and directori in current directori to _FILE
+find Path -type f | sort | tee File,find all file under _FILE and redirect sort list to myfil
+alias rmc=find . -iname core -exec rm {} \;,assign alia rec to a find command that delet all core dump file in current directori and below
+find Path -name Regex,search _FILE directori tree for _FILE file
+grep -r -n -w Regex,recurs find _REGEX in file from current folder and print match string with number onli if match whole word
+find Path -iname Regex,display all text file in home folder
+find . -name build.xml -exec ant -f {} clean-all ;,find _FILE file in current folder and run ant clean-al
+find . -iname *.jpg -print0 | xargs -I{} -0 -r convert -resize 300x300 {} $outdir/{},resiz all _FILE imag in current folder to size _REGEX
+find Path -name Regex -type f | wc -l,find all _FILE file in current folder and display count
+find Path -type f -name Regex -exec rm {} File \;,recurs remov all file with name like _FILE in _FILE folder
+find Path -type f -size +Size,find regular file larger than _SIZE in current directori tree
+echo $( seq Number Number ),print space separ list of number from _REGEX to _REGEX
+watch -n Quantity cat File,execut _FILE everi _TIMESPAN
+find . -type f -mtime +7 | tee compressedP.list | parallel compress,compress in parallel regular file in current directori tree that were last modifi more than _TIMESPAN ago
+find Path -type d -name Regex -exec rsync -a -v -R {} File \; -exec rm -r -f File \;,search all of _FILE for ani directori name _REGEX for each directori found copi it to _FILE preserv full path and attribut remov it
+find Path -mindepth Quantity -iname Regex,find all file and directori with case insensit name pattern _REGEX that are locat in minimum _NUMBER level down current directori
+find Path -print0 | xargs -0 -I {} mv -t Directory {},move all file and directori under current directori to destdir
+cat $(find /usr/share/doc/ -name *.txt) | zegrep -ic \<exception\>,count number of match for regex _REGEX in all _FILE file under _DIRECTORY directori
+echo Regex | readlink File,write _REGEX to real path of current command 's standard output
+curl Regex Regex | tr -d Regex,get directori list of url _REGEX and save them to variabl _REGEX by delet _REGEX charact
+find Path -name Regex -print,find all _FILE file in file system
+cat File | grep Regex | cut -f Number -d Regex,find all string match pattern _REGEX in _REGEX file and print rest of string after _REGEX
+ping Regex -I Regex -c Quantity -w Timespan,send at most _NUMBER ping request to _FILE with a timeout of _TIMESPAN on interfac _REGEX
+find Path -type f -exec chmod Permission {} \;,find all file under _REGEX directori and set read-writ permiss for owner and group and no permiss for other for those file
+"find Path -type f -iname Regex -printf ""%h\n"" | sort -u",list uniqu parent directori of all _FILE file found under _FILE
+"find . -type d ! -perm -g+r,u+r,o+r -prune -o -print > files_and_folders",display all directori in current folder exclud those which not read permiss to all user and save output to a file
+find Path -name Regex,search for file _REGEX in home folder
+find Path -print0 | xargs -0 -I {} ls {},list all file and directori resid in current directori and below
+find Path -perm Permission | head,find all execut file under current directori and show a few line of output from begin
+find Path -type f -name Regex,find all hidden file under _FILE
+paste File | sed -e Program | column -t -s Regex,merg line from file _REGEX _REGEX _REGEX _REGEX _REGEX replac _REGEX with _REGEX and format _REGEX delimit result as a tabl
+ln -s $( readlink -e File ) Regex,creat a symbol link name _FILE to exist full and real path of _REGEX
+echo Regex | xargs -I {} dirname {},print path to folder that contain file _FILE
+find Path -type f -print0 | xargs -0 -I {} grep Regex {},search file under and below _FILE for _REGEX
+find Path -path Regex -or -path Regex | cpio -p -a -d -l -u -v Regex,creat hard link of all file and directori match _FILE or _FILE in _REGEX preserv directori hierarchi
+find Path -name Regex -print | xargs -I {} grep Regex {},search for _REGEX in all file match name pattern _REGEX under current directori tree
+find Path -maxdepth Quantity -type f -exec md5sum {} \; | sed Program,calcul _REGEX sum of all file in current directori and format output by remov parenthesi
+$( md5sum File | awk Program ),save _REGEX sum hash of _REGEX to variabl _REGEX
+find Path -name Regex -print0 | xargs -0 -I {} wc -l {} | grep -v Regex | awk Program,print total number of line of all _FILE file in a current folder and subfold
+find Path -iname Regex -print0 | xargs -0 -I {} rm -r {},delet all file and directori name _REGEX under _DIRECTORY directori tree as super user
+basename $( pwd ),print base name of current work directori
+mkdir -p Directory,make directori to _DIRECTORY as need
+find Path -name Regex -print0 | xargs -0 -I {} rm -r -f {},remov recurs all file and folder name _FILE
+find . -type f -mtime -1 -print|xargs pr -n |lp,provid a list of all file edit _DATETIME to pr and pipe pr 's output to printer
+find Path -regextype posix-extended -type d -regex Regex,find all directori under current directori whose path are _NUMBER charact long
+find Path -name Regex,find all _FILE file and directori under current directori
+rename Regex Regex,renam all _FILE file to _FILE
+find Path -iname Regex | xargs -I {} sed -i Program {},replac all occurr of foo with bar in all _FILE file under _REGEX directori
+find Path -type f -exec grep -H Regex {} \;,search regular file of current directori tree for string _REGEX
+find Path -name Regex ! -wholename Regex -exec grep Regex {} \; -print,find all text file in current folder exclud those that are present n folder _FILE and search for a pattern
+$( hostname ),set shell prompt to _REGEX
+find . -name *.NEF -exec basename {} .NEF ; | xargs> -i sh -c dcraw -w -c $0.NEF | convert - -resize 25% $0.jpg,find _FILE file under current directori and take onli filenam without extens and run other command on file name
+ls -t -p | grep -v Regex | tail -n +Quantity | xargs -d Regex -I {} rm -- {},remov all file from current folder but _NUMBER newest one filter out directori from initi search
+export PS1=\[\033]0;\u $(host $(hostname))\007\]\u@\h:\w\$ ,set prompt to _REGEX
+find Path -name Regex,find all file and directori on system whose name is _REGEX
+tar -c -z -f File -X File File,creat an archiv exclud file match pattern list in _FILE
+find Path -type f -exec sed -i Program File File {} \;,search word needl and substitut it with replac in all _FILE file of current folder
+find Path -name Regex,find all file in folder _FILE which begin with _REGEX
+find Path -type f -ls,find and list all regular file
+hostname | sed Program,remov a lead _REGEX from system host name and save result to variabl _REGEX
+kill `pidof firefox`,send sigterm signal to all _REGEX process request them to termin
+find Path -type f -print0 | xargs -0 -n Quantity -I {} echo Regex {} | sh File,remov regular file in current directori tree
+find . -name my.txt 2> find_error.txt,find all instanc of a file in current folder and save error to a file
+echo Regex | cut -d Regex -f Number,extract host name part from url
+find Path -name Regex -mmin -Quantity,find all file and directori start with _REGEX and end with _FILE in name and been modifi in _TIMESPAN
+echo Regex | rev | cut -d Regex -f -Number | rev,keep onli last _NUMBER hyphen-separ section of _REGEX
+cat File | tail -n +Quantity | split --lines Quantity,split content of all _FILE exclud first _NUMBER line into file of at most _NUMBER line each
+ssh-keygen -f File -N Regex,creat a ssh key with no passphras and store it in _REGEX
+find Path -name Regex -type f -print,find file _REGEX on system
+ln -s File Regex,creat a symbol link name _REGEX to _FILE
+find Path \( -name Regex -or -name Regex \) -print,display all header file and _FILE file in current folder
+cat File | md5sum,calcul _REGEX sum of all _FILE file in current directori
+find Path -name Regex -exec cat {} \;,concaten file contain _REGEX in name
+echo password | su user1 -c command,run command _REGEX as user _REGEX with password _REGEX
+find . -name *.fq -exec cat {} ; | fastqc /dev/stdin,run _REGEX on all fastqc file in current directori tree
+find Path -type f -perm Permission,find all read onli file in _FILE directori
+fold -w Quantity File | sort | uniq -c | sort -n -r,display a sort count of all charact in _REGEX
+sort temp.txt > temp.txt.sort && mv temp.txt.sort temp.txt,sort string in a file _FILE
+ifconfig Regex | awk Program,get ip address of _REGEX select network interfac
+IFS= read -d $\0 -r file,unset if and read standard input into variabl _REGEX until a null charact is found without allow backslash to escap charact
+env | awk -F Regex Program | grep Regex,list all variabl with name contain x
+history | sed Program,replac space after line number in output of histori with _FILE
+comm -1 -2 <( cut -d Regex -f Number File | uniq ) <( cut -d Regex -f Number File | uniq ),write common third space separ field in _FILE and _FILE to _FILE
+cd `script`,run _REGEX output name of a directori go into that directori
+md5sum File | sort | uniq -d -w Quantity,list _FILE file that same content
+find Path Path -f -amin +Quantity,search current directori recurs for regular file last access more than _TIMESPAN ago
+find Path -name Regex -type f -print0 | sort -z -u | xargs -0 -I {} cp -t Directory {},find all _FILE file in current directori and copi them to directori _FILE
+[[ ! -z `find YOUR_DIR/ -name something` ]] && echo found || echo not found,test if file name _REGEX were found in _REGEX
+comm -3 <( sort File ) <( sort File ) | sed Program,print uniqu line in _REGEX and _REGEX when compar to each other and remov ani tab
+find Path -type f -print0,search directori tree _FILE for regular file use _NUMBER delimit for output
+find Path Path -size +Size -mtime Timespan -ls,list file larger than _SIZE under _FILE _FILE that haven 't chang in _TIMESPAN
+set -H,enabl histori expans in a script
+find Path -size Size,list file in current directori and below that are exact _SIZE in size
+find Path \( -name Regex ! -path Regex \) -exec grep -I -w Regex {} +,search current directori for file whose name start with _REGEX ignor svn file
+find Path -type f -name Regex -exec sed Program {} \;,find all regular file under _REGEX directori tree with name pattern provid by first posit paramet and show onli _REGEX _REGEX line from each of those file
+find Path -name Regex | xargs -I {} grep -E Regex {},find all _FILE _FILE file in current directori tree and search them for string _REGEX
+od -v -t x1 File,read hexadecim byte from devic _FILE
+find / -name *.jpg 2>/dev/null,find all _FILE file on system
+find Path -type f -not -name Regex -mtime Timespan -exec gzip {} \;,compress all file in _REGEX directori tree that were last modifi _TIMESPAN ago and not alreadi been compress with gzip
+yes Regex | rm -r File,recurs remov all _FILE file and answer _REGEX to ani prompt
+find Path Path -type f -mtime +Timespan -exec compress {} \;,find more than _TIMESPAN old file in _NUMBER directori and compress them
+cal | awk -v Program Program,print week day of a _TIMESPAN in a current month
+find Path -exec grep Regex {} \; -print,search file _FILE for line contain _REGEX
+finger | cut -d Regex -f Number | sort -u,print sort uniqu column of usernam of user who are current _FILE in
+find Path -name Regex -mtime Timespan,find all file and directori under _DIRECTORY directori tree whose name end with _REGEX and were modifi exact _TIMESPAN ago
+"top -c -p $(pgrep -d, -f string_to_match_in_cmd_line)",monitor onli process whose command contain _REGEX
+cat $( find Path -name Regex -print ),find all _FILE file under current directori and print content
+whoami hostname -f,save a nginx link to _FILE with current user and system fqdn host name in variabl _REGEX
+shopt -s direxpand,enabl shell option _REGEX
+find Path -type f -name Regex | awk -F Regex Program | sort -u,print a sort list of extens of regular file from current directori tree
+find Path Path -name Regex -print0 | xargs -0,find all _FILE file and directori under asia and emea directori
+find Path -type f -exec chmod Permission {} \;,find all file under foldernam directori and set permiss to _NUMBER
+split -b Size -d -a Quantity File Regex,split _REGEX into file of at most _NUMBER mib each with a numer suffix of length _NUMBER and prefix _FILE
+find temp/images/* -maxdepth 2 -iname *.jpg -print0 | xargs -0 mogrify -resize 100x100> -quality 80 -compress JPEG -monitor -strip,find all _FILE file under maximum _NUMBER level down _FILE path and run _REGEX with file path as argument
+"find . -type d -exec bash -c mv ""$1"" ""${1//foo/Bar}"" -- {} ;",move all directori under current directori to new path obtain by replac all occurr of _REGEX with _REGEX in path
+find Path -name Regex | rev | cut -d Regex -f Number | rev,find all file with name end with _FILE and display onli filenam without full path
+find Path -inum Quantity -exec rm {} \;,delet all file and directori with node number _REGEX under current directori tree
+"find Path -daystart -mtime +Timespan -mtime -Timespan Path -printf ""%M %n %u %g %10s %TY-%Tm-%Td %Ta %TH:%TM:%TS %h/%f\n"" | awk Program",find all file and folder that were creat in _NUMBER on friday of everi month
+find Path -newerct Regex -print,find file creat in _TIMESPAN work on mac _FILE x
+find Path -type l -name Regex -exec ls -l {} \;,get a detail list of all symbol link in _FILE start with _REGEX
+find Path -type f -wholename Regex | sed Program | sh,find regular file under current directori whose name end in _FILE and renam each file to same name without _FILE at end
+echo Regex | cut -d Regex --complement -f Number,print file name without last _NUMBER extens assum file name doesn 't contain ani other dot
+find Path -type f \( -iname Regex -or -iname Regex -or -iname Regex -or -iname Regex \) -exec echo {} \;,show all _FILE _FILE _FILE _FILE file in folder _FILE
+read -p Regex Regex,read a line from standard input with prompt _REGEX and save respons in variabl _REGEX
+rsync -v -a -u -t File File File,archiv all file begin with _FILE or _FILE in current directori to user 's home directori on host _REGEX preserv timestamp and skip file that are newer on _REGEX
+find Path -inum Quantity -exec rm {} \;,remov file with inod number _NUMBER
+find Path -type f -exec ls -s {} \; | sort -n | head - Quantity,sort base on size and display top _NUMBER small regular file in current folder
+find Path -type f -name Regex,find regular file under and below _FILE that match pattern _FILE
+find Path -name Regex -prune -or -exec mv {} $( echo {} | tr Regex Regex ) \; -print,renam all file and directori under current directori tree by convert name to small letter without descend into _FILE directori
+rsync File File,copi _FILE to _DIRECTORY and creat directori _DIRECTORY if _DIRECTORY exist
+find Path -name Regex -exec mv -t Directory {} +,find all _FILE file under _FILE and move them to _FILE
+find Path Path -f -atime Timespan,search current directori recurs for regular file last access _TIMESPAN ago
+ls -1 | perl -pe s/\n$/some_delimiter/,list all file in a current folder separ name with _REGEX
+screen -S SessionName -X at .# stuff date ,send content to screen session window with a certain titl
+find /home/www/ -type f | xargs perl -pi -e s/subdomainA\.example\.com/subdomainB.example.com/g,find all regular file under _FILE and replac everi occurr of _FILE with _FILE in those file
+sed Program,convert all charact in standard input to lower case
+"mount -o rw,remount Regex Regex",remount _FILE on _FILE as read and write
+mkdir Directory,creat directori _FILE in user 's home directori
+find | wc -l,find all file in current directori tree and count them
+find Path -maxdepth Quantity -type f Path,find writabl regular file in current directori
+touch $( date --date Regex ) File,set timestamp of b to timestamp in stat format specifi by variabl _REGEX
+find Path -type f -iname Regex -print0 | xargs -0 -I {} grep Regex {},find string with text _REGEX in ani case file like _FILE recurs in a current folder
+find Path -name Regex -exec rm -i {} \;,remov all _REGEX file under current directori with confirm prompt
+find Path -maxdepth Quantity -type f -empty -delete,find all empti file in current directori and delet them
+find Path Path Path -type f -name Regex -exec grep -i -l Regex {} \;,search for _REGEX in all _FILE file under _REGEX _REGEX and _REGEX directori tree and print onli name of match file
+find Path -name Regex -exec echo {} \;,list all _FILE file and directori under current directori
+find Path -mindepth Quantity -maxdepth Quantity,find all file and directori in _NUMBER level down current directori
+find Path Path Path -print | tee File,creat a backup of all file in current folder to floppi and save file list in file _FILE
+find Path -mtime -Timespan -name Regex,find all _FILE file which are modifi in _TIMESPAN
+find Path -regextype posix-extended -regex Regex -fprint File,find all file and directori under _REGEX directori tree match posix extend regular express _REGEX and save output in file _REGEX
+paste <( cal DateTime DateTime ) <( cal DateTime DateTime ) <( cal DateTime DateTime ),print calendar for februari _DATETIME and _DATETIME of year _NUMBER side-by-sid
+alias -g X=| cut -d' ' -f2,set alia _REGEX for command _REGEX
+echo -ne some random\nbytes | xxd -plain | tr -d \n | sed s/\(..\)/%\1/g,convert _REGEX to _REGEX separ hexadecim byte valu
+history | grep Regex -A Quantity -B Quantity,search for _REGEX in output of _REGEX and print _NUMBER line that preced and follow
+ssh user@target cd /some/directory; nohup myprogram > foo.out 2> foo.err < /dev/null,execut _FILE in background on target machin _REGEX and write standard output and standard error to _FILE and _FILE
+find /home/mine -iname *.png -exec sh -c cp $0 /home/mine/pngcoppies/copy/$0 {} ;,search for all _FILE file in a folder and copi them to anoth folder
+yes,output string _REGEX continu until kill
+echo Regex | tr Regex Regex,replac all space with comma in _REGEX append with _REGEX and save result string to variabl _REGEX
+ls -F -l -t -r File,print long list of directori _REGEX sort from oldest to newest with append indic
+sort --unique File | split --numeric-suffixes --lines Quantity --suffix-length Quantity --verbose,split sort and uniqu line in file _FILE into file with at most _NUMBER line each with numer suffix of length _NUMBER
+find Path \( -name Regex -or -name Regex \) -print0 | xargs -0 -I {} grep -H -i -n Regex {},find string _REGEX case insensit in all _FILE and _FILE file under current directori tree and display match line along with file name and line number
+awk -F Regex Program Program | column -t -s Regex,print first line and line with _REGEX as third _REGEX separ field in _REGEX and format result as a _REGEX delimit tabl
+find Path -maxdepth Quantity -name Regex -or -name Regex,display all file with name _REGEX and _REGEX in current folder and not search in sub directori
+chown Regex File,chang owner of _DIRECTORY to _REGEX
+watch -n Quantity date,execut _REGEX everi second
+split -a Quantity File,split _REGEX into file with at most _NUMBER line each and use a prefix length of _NUMBER
+find -L Path -name Regex -exec rm {} +,find all file whose name end with _REGEX in _FILE directori tree follow symlink and delet them
+diff -b -u Quantity File File,print a minim set of differ between file in directori _REGEX and _REGEX treat absent file as empti ignor differ in whitespac treat all file as text and print _NUMBER line of unifi context
+find Path -size +Size -exec ls -l -h {} \;,display a long list of file and directori with human readabl size under _FILE directori tree which are bigger than _SIZE
+comm -1 -2 <( sort File ) <( sort File ) | wc -l,count number of equal line in _FILE and _FILE
+find Path -name Regex,find all _FILE file and directori under current directori
+"su user1 -c ssh user1@192.168.1.2 ""awk '\\$5==1{print \\$3}' filename.log"" | uniq -c",run command ssh _FILE _REGEX _REGEX _FILE as _REGEX and unifi result
+find Path -not \( -path Regex -prune \) -not \( -path Regex -prune \) -type f,list all regular file which path is not _REGEX or _REGEX
+tmux show-environment | grep RBENV,check if rbenv is defin in current tmux session environ
+echo -n $( hostname ),print host name without a newlin
+comm -1 -2 <( comm -1 -2 <( comm -1 -2 <( sort File ) <( sort File ) ) <( sort File ) ) <( sort File ),print common line of file _REGEX _REGEX _REGEX and _REGEX
+kill -9 $(pgrep amarok),termin amarok immedi
+find Path -type f -name Regex -exec md5sum {} +,calcul _REGEX sum of everi _FILE file in directori tree _FILE
+find Path -type d -exec mkdir -p Directory \; -or -type f -exec touch File \;,copi an entir file structur creat empti file in copi instead of copi actual file
+find Path -perm Permission,find all _PERMISSION file
+find Path -name Regex -fprint File,send output from find find command to a file
+find Path -type d,find all directori under _REGEX directori
+exec 1 2>&1 | tee ${LOG_FILE},execut _NUMBER and write standard output and error to standard output and file _REGEX
+chown -R Regex File,recurs chang owner to _REGEX and group to _REGEX of _REGEX
+du -s --block-size Size File,find a size of onli target directori in mb format
+find Path -path Regex,display all file in current folder which in sub directori tree of folder which begin with word _REGEX follow by a digit
+find Path -type f -print0 | xargs -0 -I {} file {},find all file under current directori and show file inform
+ping -c Quantity -b Regex | grep Regex | awk Program | sort | uniq,send _NUMBER ping to broadcast address _FILE and print uniqu ip who respond
+ps -a -u Regex | grep Regex | awk Program | xargs -I {} pstree {},print a process tree for each process of user _REGEX
+ping -q -c Quantity Regex | tail -n Quantity | cut -f Number -d Regex,print averag round trip time of _NUMBER ping to _FILE
+find Path -name Regex | xargs -I {} rm -r -f {},delet all _FILE file and directori under current directori
+"find Path -depth -type f -printf ""%d\t%p\n""",find depth of all file in current folder and display depth and file name
+find Path -newer File,find all file and directori that are newer than _FILE by modif time
+find Path -mindepth Quantity -delete,delet all file under and below current directori
+cd `/path/to/my/script`,run _FILE output name of a directori go into that directori
+find Path -size +Size -print0 | xargs -0 -I {} mv {} File,find all file in current directori tree whose size is greater than _SIZE and move them to _REGEX folder
+echo `date +%s`/86400 | bc,print day sinc epoch
+tac File | sed Program | tac,print all line from last occurr of regex _REGEX to end of file _REGEX
+screen -ls,list all screen session
+find Path -name Regex | xargs -I {} grep -P Regex {},search for perl regex _REGEX in _FILE file under current directori tree
+find Path -user Regex -type d -perm Permission -print,find directori own by user news with permiss _NUMBER
+echo -e Regex | od -a,display name charact in _REGEX
+find Path -name Regex -print | xargs -n Quantity -I {} grep Regex {},find _REGEX file and grep for string _REGEX in those file
+echo -n Regex | od -A n -t x1,print each charact in _REGEX as a hexadecim valu
+find Path -name Regex,find all _FILE file and directori under current directori
+find Path -mmin -Quantity -mmin +Quantity -type d,find all directori in _FILE directori tree that were last modifi more than _TIMESPAN ago but less than _TIMESPAN ago
+find src/js -type f -name *.js > list.txt,find all _FILE script file in a folder and save list to a file
+find Path -maxdepth Quantity,search current directori up to depth level _NUMBER for file and directori
+"find . ! -name . -prune -exec sh -c shift $1; mv ""$@"" targetdirectory/ 2 1 {} +",move all file from current directori to _REGEX
+set | grep -E Regex | sed -r -e Program,list all defin bash function
+find Path -type f -name Regex ! -path Regex ! -path Regex,display all file have word _REGEX in name in current folder exclud those from path _DIRECTORY and _FILE
+find Path -atime +Timespan -print,search in current directori downward all file which not been access sinc _TIMESPAN
+yes Regex,infinit print _REGEX to screen
+rename Regex Regex,renam all file in current directori with name start with _REGEX so start with _REGEX instead
+for f in fgh*; do mv $f $(echo $f | sed s/^fgh/jkl/g); done,renam all file in current directori start with _REGEX to start with _REGEX
+find Path -name Regex Path Path -mtime -Timespan -print0 | xargs -0 -I {} tar -r -v -f File {},append all _FILE file modifi within _TIMESPAN to tar archiv _FILE
+ssh-copy-id myname@somehost,copi default ssh public key to _REGEX as user _REGEX
+grep -i -n -r Regex File,recurs find all file with ani case text _REGEX in a current folder and preced found string with it number in file
+find Path -name Regex,search for file _REGEX in entir file system
+set -o errexit,exit shell immedi if an error is encount
+find Path -type f -exec grep -H Regex {} \;,recurs find all file and print all string with _REGEX from that file preced match string with filenam
+md5 File File,onli get _REGEX of a file
+tar -czf backup.tar.gz --exclude-tag-all=exclude.tag /path/to/backup,creat a compress archiv exclud directori contain _FILE
+find Path -name Regex -size +Size,find all file and directori with _FILE extens under _FILE directori tree that are greater than _SIZE in size
+ifconfig Regex | grep Regex | cut -d Regex -f Number | cut -d Regex -f Number,show mac address of network interfac _REGEX
+find Path -type f -name Regex -exec rm -f {} \;,forc delet all regular file with name _FILE
+find Path,find all file and directori under current directori
+find Path -iregex Regex,find all file and directori under current directori that match case insensit regex _FILE
+split -l Quantity File,split _FILE into file with at most _NUMBER line each
+find Path -atime +Timespan,search current directori tree for file last access more than _TIMESPAN ago
+find Path -name Regex | xargs -I {} mv {} File,find all text file in current folder and move all these to anoth folder append _FILE at end of these file
+find Path -print | xargs -I {} chown Regex {},chang owner and group of all file in folder _FILE
+read -r -p Regex Regex,read a line from standard input into variabl _REGEX without backslash escap use prompt about to delete all items from history that match _REGEX
+touch -m --date Regex File,set modif timestamp of file _REGEX to specifi _FILE
+find Path | grep Regex | grep Regex,search for _FILE in all file under current directori that match _REGEX in name
+ln -f -s File Regex,forc creat a symbol link name _REGEX with target _FILE
+find Path -type f -name Regex -print,find all text file in current folder
+sort File | uniq -c,print a count of duplic line in _REGEX
+readlink -f File,save absolut path of _REGEX whose parent exist to variabl _REGEX
+find Path -type f -name Regex -exec sed -i Program {} \;,replac all occurr of _REGEX with _REGEX in all regular file with _FILE extens under _FILE directori tree and modifi them in-plac
+dig Regex | grep -e Regex | tr -s Regex Regex | cut -d Regex -f Number,fetch _FILE domain ip address from dig dns lookup
+find Path -type f -exec chmod Permission {} +,set _NUMBER permiss to all regular file under _FILE
+read -n Quantity -p Regex Regex,read a singl charact from standard input with prompt _REGEX and save respons to variabl _REGEX
+command | less,page interact through output of run _REGEX arrow key move view around _REGEX and _REGEX key go to _FILE of output _DIRECTORY key initi a search q key quit etc
+find Path -type f -mtime Timespan,find all regular file that were modifi _REGEX day ago under current directori tree
+find Path -name Regex,locat all _FILE file in current directori tree
+find Path Path -name Regex -type f,look for file _REGEX under _FILE and _FILE
+find Path -type f -name Regex -exec tar -u -v -f File {} \;,creat a gzip archiv file of all _FILE file under _REGEX
+"find Path -type f -name Regex -delete -printf ""%h\0"" | xargs -0 -I {} rmdir {}",recurs remov all file like _FILE in current folder and remov folder with such file if becom empti
+ls -l -R File | grep -v Regex | awk Program,save byte size of all content of _REGEX folder in _REGEX variabl
+find Path -group Regex -type f,find all regular file in current folder which belong to group _REGEX
+find Path \( -size +Size -fprintf File '%-10s %p\n' \),find all file and directori greater than _SIZE and print list along with size in _FILE file
+source <( grep -v Regex File ),interpret _FILE in current shell ignor line that contain _REGEX
+find Path \( -name Regex -or -name Regex -or -name Regex \) -exec rm {} \;,clean directori and subdirectori of temporari file generat dure normal use
+find Path -type f -name Regex -exec md5sum {} + | awk Program | sort | md5sum,calcul _REGEX sum of sort list of _REGEX sum of all _FILE file under _DIRECTORY
+true | echo Regex,execut _REGEX in a subshel that is open by command _REGEX
+cat File | sed Program,remov _REGEX from content of _FILE and save output to variabl _REGEX
+find Path \( -perm -Permission -fprintf File '%#m %u %p\n' \) -and \( -size +Size -fprintf File '%-10s %p\n' \),find all file in file system which set _PERMISSION enabl and save them to _FILE and those which size greater than _SIZE save them to _FILE
+ssh -t me@machine ./executeMyScript && bash -i,ssh into _REGEX run _FILE and spawn a bash shell
+read -n Quantity Regex,read one charact from standard input into variabl _FILE
+find -x Path -inum Quantity,find file and directori with inod number _NUMBER under _FILE directori tree without travers other _FILE
+read -p Regex,read a line from standard input into variabl _REGEX with prompt _REGEX
+find Path -iname Regex -print0 | xargs -0 -I {} rm {},delet all _FILE file under _FILE
+find /full/path/to/dir -name *.txt -print0 | xargs -0 >/tmp/logfile,find all _FILE file in current directori tree and save path name to _FILE
+find Path,find all file and directori in all path expand by glob pattern _REGEX
+find . -name *.txt | xargs python -c import sys; print sys.argv[1:],find all _FILE file and directori under current directori and execut python code _FILE with file path as argument
+find Path -type f -iname Regex,find file _FILE in folder _DIRECTORY
+find ./subdirectory -type f 2>>error.log,display all regular file in a folder and save error to a _FILE file
+cp -n -r File File,copi _REGEX recurs to _REGEX but without overwrit exist file
+echo $( date ),save current date to _REGEX variabl
+find Path -type d -iregex Regex,find all directori under current directori tree that match case insensit regex _FILE in path
+find Path -size +Size -size -Size,find all file in current folder which are bigger than _SIZE and less than _SIZE
+find Path -inum Quantity -exec mv {} File \;,find all file and directori with inod number _NUMBER and move them to _REGEX
+find . -type d -print0 | tar cf dirstructure.tar --null --files-from - --no-recursion,archiv directori structur under current directori into _FILE
+find Path -type d -printf '%T+ %p\n' | sort | head - Quantity,find directori with least modif time under current directori
+find Path -iname Regex,search for file name _FILE in a case-insensit manner
+find Path -name Regex -exec ln -s {} Regex \;,creat a symbol link in directori _FILE for each file and directori under current directori start with _REGEX
+find Path,find all file and directori in path expand by glob pattern _FILE
+find Path -type d -exec chmod Permission {} \; -or -type f -exec chmod Permission {} \;,find all file and directori under _FILE and set directori permiss to _NUMBER and file permiss to _NUMBER
+"join -o 1.1,1.2,1.3,2.1,2.2,2.3 -j Regex <( sort -k Number File ) <( sort -k Number File )",merg colon-separ inform from _REGEX and _REGEX where second field of both file match sort result base on field for each line output first _NUMBER field of first file follow by first _NUMBER field of second file
+find Path -group Regex -print,display all file in file system which belong to group lighttpd
+find Path -type f -exec basename {} \; | xargs -I {} rm {},remov file in current directori accord to filenam found in _DIRECTORY
+find Path -perm Permission -print,check if myfil _NUMBER permiss
+find Path -name Regex -size +Size -print,find all _FILE file in _FILE bigger than _SIZE
+find Path -name Regex -execdir pwd \;,search for a shell script in current folder and display current folder path but search from sub directori
+find Path -type f -regex Regex,search current directori tree for all imag file
+find Path -maxdepth Quantity -type f -exec md5sum {} \; | awk Program,calcul _REGEX sum of all file in current directori with filenam print first
+find Path -name Regex -print0 | xargs -0 -I {} rm {},remov all _FILE file from _FILE directori tree
+find /path -type f -name *.ext -exec my_cool_script {} ;,find all _FILE regular file under _FILE and execut _REGEX for each of them with file path as argument
+find Path -name Regex -print -xdev,find file and directori name _FILE in root filesystem partit
+chgrp -R Regex File,recurs chang group ownership of everyth within a current directori to _REGEX
+find Path -maxdepth Quantity -name Regex -exec rm {} \;,non-recurs find all _FILE file in a current folder and remov them
+find Path -type f -name Regex | xargs -n Quantity -I {} dirname {} | xargs -n Quantity -I {} cp -f File {},find everi folder with file _FILE within and copi file _FILE to everi one of them
+find Path -size +Size,find all file in current directori of size greater than _SIZE
+rename -n Regex Regex,perform a dri run replac _REGEX with _REGEX in all file name in current directori
+column File,treat each line of _FILE as a valu to be put in one cell of tabl that _REGEX output
+awk Program Program | column -t,format each line as _NUMBER column base on extran column
+find Path -iname Regex -exec grep Regex {} \; -print | sed -r Program,search for _REGEX in all _REGEX file under current directori and run sed script _DIRECTORY on output
+find . -name *.zip -exec sh -c unzip -d `dirname {}` {} ;,find all _FILE file under current directori and unzip them in same directori as file
+find Path -user Regex -name Regex,find all _FILE file own by user vivek
+find Path -type f -ls | sort -n -r -k Number | head - Quantity,list largest file in long list format of all file under current directori
+find Path -mount -depth -print | cpio -p -d -m Regex,copi a whole directori tree skip file resid on other file system to _REGEX
+find Path -type f -iname Regex,search system for regular file whose name are _REGEX ignor case
+"mount -t cifs Regex Regex -o username=Username,password=password",mount remot _REGEX filesystem _DIRECTORY on _FILE with usernam _REGEX and password _REGEX
+source <( grep Regex File | sed Program ),grab _REGEX pair from a window style _FILE file into current shell
+find Path -name Regex,find _FILE file in current directori recurs
+find Path -not \( -path Regex -prune \) -name Regex,exclud directori from find command
+find Path -name Regex -print0 | xargs -0 -I {} gunzip {},find all _FILE file in current directori and decompress them use gunzip
+find Path -name Regex -or -name Regex,display file in current folder end with _FILE or _FILE
+find Path -type f \( ! -iname Regex \) -mtime +Timespan -exec ls {} \;,display list of all file in current directori which been access in _TIMESPAN exclud hidden file
+find ./ -name *.txt | perl -p -e s/^(.*\/(.*)\.txt)$/mv $1 .\/foo\/$2.bar.txt/ | bash,find all text file in current folder and chang extens of these file and move them to anoth folder
+rsync -a -f Program -f Program -f Program File File,archiv all file in _REGEX to _REGEX specifi to includ file _FILE and _FILE
+find Path -name Regex,find all file in current directori tree whose name begin with _REGEX
+false | true,save exit status of pipe command in a system variabl _REGEX
+find Path -name Regex -exec echo Regex {} \;,print command that execut _REGEX on all _FILE file from current directori tree
+echo Regex | tee File,write _REGEX to standard output and to file _FILE
+chown ${JBOSS_USER}: $(dirname $JBOSS_PIDFILE) || true,chang owner of directori name of _REGEX to _REGEX and alway return success
+find dir -type f -exec md5sum {} + > dir.md5,find all file under dir and calcul _REGEX and save output to _FILE
+find Path ! -name Regex -prune,print list of file and directori of current directori
+find Path -name Regex -exec echo {} \;,list all _FILE file and directori under _FILE directori
+find Path -type f -wholename Regex -exec grep -H Regex {} \;,identifi cms _FILE accross all phpbb instal
+find . -mtime -1 | xargs tar --no-recursion -czf myfile.tgz,get all file in a current directori modifi in _TIMESPAN
+find . -maxdepth 1 -type d > dirs_to_remove,save list of all subdirectori of current directori as _REGEX
+mkdir Directory,make directori _REGEX
+find Path -type f,display all regular file in a directori
+uniq -c | sort -n | tail -n Quantity,print line with most consecut repeat prefix with it count from standard input
+find Path -cmin -Quantity,find recurs all file chang within _TIMESPAN start from directori b
+find . -name *.txt | python hello.py,find all _FILE file and directori under current directori and execut python script _FILE for each of them with file path as an argument to script
+rsync -urv --progress dir_a dir_b && rsync -urv --progress dir_b dir_a,synchron _REGEX and _REGEX to contain latest file in both directori
+find Path -type f -print0 | xargs -0 -I {} grep -c Regex {} | grep -v Regex,hunt down file with at least one banana
+find Path -name Regex | grep -v Regex,search entir file hierarchi for file end with _REGEX and print all match except for those with _FILE in pathnam
+find Path -size +Size -and -size -Size,search for file whose size is between _SIZE and _SIZE
+find . -name openssl 2>/dev/null,find all instanc of a specif file in current directori and discard all error
+curl Regex Regex Regex,download content from _FILE and output to _FILE
+echo Regex | ssh Regex,run command _REGEX on server _FILE
+md5=($(md5sum file)),save filenam and hash of _REGEX sum of _REGEX to bash array _REGEX
+find /path/to/dir -type f -exec printf %.sX {} + | wc -c,find number of regular file under and below directori _FILE
+wc -l $( find Path -type f -name Regex ),count total number of line in all _REGEX file in current directori
+column -t File | uniq -w Quantity -c,display content of _REGEX format into a tabl remov duplic line where first _NUMBER charact are duplic and display number of occurr at begin of each line
+find Path -path Regex,find all file in current directori tree whose path name match pattern _FILE
+find Path -daystart -maxdepth Quantity -mmin +Quantity -type f -name Regex Path Path -f {} Path,delet all regular file with _FILE extens that were modifi in more than _TIMESPAN ago in maximum _NUMBER level down directori _FILE
+find Path -type d -iname Regex,find all directori in current directori tree with _REGEX in name
+find Path -depth -type d -empty -exec rmdir {} \;,recurs remov all empti folder under current folder
+( awk NR % 2 input; awk NR % 2 == 0 input ) | paste - - - | column -s    -t,format _REGEX as altern row in a tabl
+find Path -name Regex,find all _FILE under _FILE directori tree that contain word _REGEX in name
+find Path -perm Permission -exec ls -l {} \;,list file in current directori tree which permiss rwx for user and rw for group and other
+sleep `10`,sleep for _TIMESPAN
+find Path -type f -maxdepth Quantity -exec sed -i Program {} \;,replac all match with regex expand by _REGEX with text expand by _REGEX in all regular file under current directori not go into subdirectori and modifi file in-plac
+cat File,print content of _FILE
+echo Regex | od -A n -v -t x1 | tr -d Regex,convert _REGEX to a string of hexadecim byte
+cat File | wc -l,count number of line in all _FILE file
+find Path -perm -Permission -type f -exec ls -l {} \;,find all regular file with group read permiss set in home directori and below and output detail inform about each file
+find Path -type f | xargs -I {} chmod -v Permission {},chang permiss to _NUMBER for all file in current directori tree
+if find `echo $some_dir` -maxdepth 0 -empty | read v; then echo Empty dir; else Dir is NOT empty fi,print _REGEX if _REGEX is empti otherwis print _REGEX
+date -d Regex '+%Y-%m-%d',print year-month-d format for given time
+find Path -type f -exec chgrp Regex {} \;,chang group of all regular file in current directori
+which Regex,print full path of command _FILE
+find */201111/*20111130* -name *.jpg -print0 | sort -t _ -nk2 | xargs -0 cat | ffmpeg -f image2pipe -framerate 30 -vcodec mjpeg -i - -vcodec libx264 -profile:v baseline -level 3.0 -movflags +faststart -crf 19 -pix_fmt yuv420p -r 30 output.mp4,find all _FILE imag in folder which are in path _DIRECTORY and sort them accord to name and convert them into video _FILE
+yes | head -n Quantity | awk Program,print a singl line of number from _NUMBER to _NUMBER
+find Path -mtime -Timespan -user Regex -exec ln -s {} Regex \;,creat symbol link in directori _FILE to all file locat in directori _REGEX and that been modifi earlier _TIMESPAN and own by user _REGEX
+find Path -name Regex -type d -exec mv {} File \; -exec mkdir Directory \; -exec sh -c mv File File \;,move each of _REGEX directori in current directori to anoth directori whose name is constitut by append _FILE to each directori name and creat a directori name messag in directori move all _FILE file into directori
+tac File | sed Program | tac,replac last occurr of _REGEX with _FILE
+sudo setfacl -R -m u:www-data:rwx -m u:`whoami`:rwx app/cache app/logs,recurs set file access control list of _FILE and _FILE to rwx for current user and for user _REGEX
+basename -- Regex,from a script output name of script without contain directori from a shell output name of shell
+find Path -type f -print | xargs -I {} grep -l -i Regex {},list all regular file resid in current directori tree and contain string _FILE
+top -l 1 -s 0 -stats mem -pid PID,get virtual privat memori use of process
+"find Path -type f \( -ctime Timespan -or -atime Timespan -or -mtime Timespan \) -printf ""./%P\n""",list file under _REGEX which were modifi access or whose status were chang _REGEX ago replac _REGEX path string to _DIRECTORY
+find Path -exec file {} \;,recurs search for everyth under current directori display human-read file type descript for each entri
+find Path -newermt Regex,find all file in folder _FILE which been modifi after a specif date
+mv File File,move all hidden file in _DIRECTORY to _DIRECTORY
+find Path -name Regex | grep -v Regex | grep -v Regex,find all file and directori with _FILE extens under current directori tree and show list by exclud path that contain _REGEX and _REGEX
+rsync -avz -e ssh -p $portNumber user@remote.host:/path/to/copy /local/path,archiv _FILE on host _REGEX as user _REGEX to _FILE via ssh on port _REGEX
+find Path -name Regex -prune -or \( ! -name Regex -print0 \),find all file and directori ignor _REGEX file and directori without descend into _FILE directori with null charact as delimit
+ls File | tee File File,display list of file end with _FILE in current folder to termin twice and output it to text file _FILE
+od -t x1 -A n File | head,display first _NUMBER line of byte hex dump with no file offset data for _FILE
+rename Regex Regex,add _REGEX to begin of name of _FILE renam it to _FILE
+find Path -name Regex -print0 -type f | xargs -0 -I {} grep Regex {},find _FILE file with text _REGEX
+read -a Regex,read a line from standard input and save each word in bash array variabl _REGEX
+find Path -print,display all file in home folder
+find Path -name Regex,search for all text file in folder _FILE
+find Path -type f -mtime +Timespan -print0 | xargs -0 -I {} rm {},find all file under current directori that were modifi more than _TIMESPAN ago and delet them
+find Path -type f -atime -Timespan,display all file in current folder for file which been access in _TIMESPAN
+find Path -name Regex -exec ls {} +,list all _FILE file in home directori tree in a fast way
+seq Number | awk Program,print number from _NUMBER to _NUMBER with _NUMBER valu per line
+tac File | sed -n -e Program | tac File,extract text between _REGEX and _REGEX if and onli if _REGEX is follow by _REGEX
+find Path -type f -group Regex,find all regular file in entir filesystem that belong to group _REGEX
+find Path -mtime +Timespan,find all file that been modifi _DATETIME
+find Path -type f,find all file under current directori
+"find . -type d -depth 1 -print0 | xargs -0 sh -c for dir; do pushd ""$dir"" && latexmk -c && popd; done fnord",find all directori under current directori and run a command chang into everi _FILE
+chown $(stat -c%u:%g $srcdir) $dstdir,clone permiss of _REGEX to _REGEX
+mktemp -u -p Regex,generat default-format file name of temporari file in a _FILE folder and save path to it in a variabl _REGEX
+find Path -type l,list symbol link under directori _REGEX
+ld --verbose | grep SEARCH_DIR | tr -s  ; \012,print linker search path use ld format on new line
+sed -n Program,cut all remot path from http url receiv from standard input keep onli protocol identifi and host name of form _FILE
+find Path -name Regex -exec grep -H -i -n Regex {} + | basename $( cut -d Regex -f Number ),find _FILE file in current directori tree that contain _REGEX and print name
+find Path -type f | grep -i Regex,find all file under _FILE match case insensit regex _REGEX in path
+brew --prefix,display homebrew 's instal path
+"seq 5 | perl -ne chomp; print ""$_ ""; END{print ""\n""}",print space separ number from _NUMBER to _NUMBER
+find Path -type d -empty -exec rmdir {} \;,delet all empti directori in current folder
+$( readlink -f $( dirname Regex ) ),print real path of folder contain _REGEX file
+find Path -name Regex -print | cpio -p -d -m Regex,copi all _FILE file in _DIRECTORY directori tree to _DIRECTORY preserv directori hierarchi
+rsync -a --relative File File,archiv _FILE to host _REGEX use relat path name
+find / -name *.md -type f -exec markdown -o {}.html {} ;,find all _FILE file in entir file system and convert them to _FILE file
+find .|grep FooBar|yargs -l 203 cp --after ~/foo/bar,find all file and directori under current directori with _REGEX in path and copi them to _FILE
+touch -r File File,set timestamp of b to same one as a
+pstree Regex,show onli process tree root at process of user
+grep -v pattern file > temp && mv temp file,delet all line in _REGEX that contain _REGEX use _REGEX as temporari work file
+find Path -name Regex | xargs -I {} grep Regex {},search all python file in current directori tree for string _REGEX
+find Path -size +Size -size -Size -print,list all file that are between _NUMBER and _SIZE in size
+fg,get a current job back to foreground
+set -e,abort shell or script on first fail command
+find Path -maxdepth Quantity -type d -print | xargs -I {} echo Regex {},find directori in current directori and print them append with a string liter _REGEX
+uname -r,set variabl valu to current kernel releas name
+ping -w Timespan Regex,send ping request to hostnam specifi by variabl _FILE for _TIMESPAN
+find Path -name Regex,display all _FILE file in current folder
+touch -d Regex File,set timestamp of all _FILE file in current directori to date specifi
+du -a File | sort -n -r | head,print top _NUMBER largest file and directori
+find Path -iname Regex,search for file and directori with a case insensit _FILE extens in entir file system
+xxx |& tee /dev/null,redirect stderr to stdout and write to consol and _FILE
+v=$(whoami | perl -e print uc <>),save user name in all capit of current user to variabl _REGEX
+scp -r File File File,recurs copi directori _REGEX and _REGEX to directori _FILE on host _REGEX connect as ssh user match current user on local host via default tcp port for ssh
+find Path -type f -empty -print0 | xargs -0 -I {} rm {},remov all empti regular file under current directori and below
+find Path -name Regex -ls,display list of all hidden file in home folder
+find Path -name Regex -exec echo {} Regex \;,find all file in current directori which end with orig
+find Path -maxdepth Quantity -type d | awk -F Regex Program,list all directori in current directori work even if weird name or name start with a dash
+find Path -prune,prune all file in current directori onli current directori is output
+find Path -type d -name Regex,search for directori start with _REGEX in entir file system
+ifconfig | grep -o -P Regex,get ip address of all activ network interfac and save to _REGEX variabl
+echo -e Regex | nl,generat obsolet _NUMBER charact spanish alphabet and number each charact
+find Path -type f -exec chmod Permission {} +,find all file under _FILE and set permiss to _NUMBER
+diff <(fold -w1 <<< $s) <(fold -w1 <<< $r) | awk /[<>]/{printf $2},print differ between _NUMBER string _REGEX and _REGEX
+$( dirname Regex ),print directori where execut script is locat
+find Path -name Regex | xargs -I {} rm {},remov all file with name like _FILE from current directori tree
+find Path | xargs -i -I {} rm -f {} {},forc delet all file in current folder
+dig Regex | grep Regex | grep -v Regex | awk Program,grep domain _REGEX ip name from long dig list
+read -a arr <<< 1 4 6 9 11 17 22,save _REGEX as a bash array _REGEX
+find Path -exec grep -i Regex {} \;,search file in current directori tree for line contain string _REGEX
+curl -x http://proxy_server:proxy_port --proxy-user username:password -L http://url,download content from _FILE use a proxi server
+df -P File | awk Program,print mount point of file system contain _REGEX
+yes Regex | rm -i -r File File File,answer _REGEX to ani prompt in interact recurs remov of _REGEX _REGEX and _REGEX
+which Regex,save full path of command _FILE to variabl _REGEX
+fold -w1 file | pr -4t | sed s/\s*-\s*//g | tr -d \n | sed $a\,print each column in _REGEX with _REGEX charact remov
+top -l 1 -s 0 -stats mem -pid $PID,show intern memori size use by process whose pid is specifi by variabl pid
+find Path -name Regex -and -type d -prune -or -print,print list of file in current directori tree skip svn file
+cat File | xargs,print join string from _REGEX use space symbol as separ
+ldd /bin/* /usr/bin/* ... | sed -e /^[^\t]/ d; s/^\t\(.* => \)\?\([^ ]*\) (.*/\2/g | sort | uniq -c,rank usag of librari for a set of tool _FILE
+watch -d top -n1 | grep mysql,execut _REGEX everi _TIMESPAN and highlight differ between run
+find Path -type f -size +Size -print | xargs -I {} ls -l -d {} | more,list all file under current directori that are greater than _REGEX byte in size
+who | grep $(tty | sed 's:/dev/::'),list all user _FILE into current tti
+find /ghi /jkl -type f -name abc.def 2> /dev/null -exec ls {} ; -exec cat {} ;,list and see content of all _FILE file under directori _FILE and _FILE
+find Path -type d -name Regex -prune -or -type f -print,find all file in current directori tree ignor _FILE directori
+find Path -name Regex,locat _FILE in _FILE directori tree
+od -A n -N File -t u2 File,read _SIZE from _FILE and print them as an unsign integ
+echo -n Regex | md5sum,calcul _REGEX sum of empti string
+find Path -type f | xargs -I {} grep Regex {},search regular file of current directori tree for string _REGEX
+find Path -name Regex -prune -or -name Regex -type f -print,search _FILE directori recurs for regular file name _REGEX ignor _REGEX directori
+find Path -exec cat {} \;,print content of all file found regard seach option _REGEX
+find Path -type d -perm -Permission,find all directori in current one recurs which write bit set for _REGEX
+find Path -name Regex -or -name Regex,find all _FILE cpp file in current folder
+rmdir $( dirname Regex ),cut off last part from path _REGEX and delet result folder if empti
+read -r -s -p Regex,silent read a line from standard input into variabl _REGEX without backslash escap and use prompt _REGEX
+find Path -print,find all file and directori under current directori
+find Path -perm Permission -exec chmod Permission {} \;,remov all permiss for other to all file in current folder which read write execut access to user group and other
+echo Regex | nl -b a -s Regex,add a number prefix follow by _REGEX to each line in _REGEX
+chmod +Permission File,add execut permiss to _FILE
+time -o time.log command,use gnu tool _REGEX to estim time consum by command _REGEX and redirect output to file
+find Path | grep Regex | xargs -I {} cp {} File,copi all file with _REGEX in path under current directori to _FILE directori
+find Path -type d -name Regex -exec dirname {} +,find _FILE directori in directori tree _FILE and print pathnam of parent
+find Path -name Regex -print0 | xargs -0 -I {} mv {} File,move all file in current directori tree that match _REGEX to _REGEX
+ping Regex -c Quantity | grep -E -o Regex | cut -f Number -d Regex,set variabl ping to _NUMBER if it 's possibl to ping host address to _NUMBER otherwis
+find Path -name Regex -mtime +Timespan,find all file and directori under current directori tree that start with _REGEX and end with _REGEX in name and were modifi more than _TIMESPAN ago
+find Path -name Regex -exec ls -l -r -t {} + | awk Program,list all _FILE file and directori under _DIRECTORY directori
+find Path -iname Regex \( -type d -or -type f \) -mtime -Timespan,find all file and directori under current directori tree that modifi in _TIMESPAN and contain _REGEX in name
+find Path -name Regex -delete,remov all _FILE file in and below current directori
+yes Regex | bash,display infinit scroll of random ascii art
+tail -n +Quantity File,print content of _REGEX start from line _NUMBER
+find . -name *.txt -printf %f\n > /tmp/a,display all text file in current folder and save output to a file
+find Path -path Regex,find all file in current directori tree whose pathnam match pattern _FILE
+tr Regex Regex,replac all _REGEX with _REGEX from standard input
+fold -w30 longline | pr -20ts|,insert _REGEX everi _NUMBER charact in file _REGEX
+cd $( ls -d File | grep Regex ),go into first directori whose name contain _NUMBER
+find Path -path Regex -prune -or -name Regex -print,search for file and directori name _FILE under current directori tree without travers into _FILE
+find Path -type 'd' | grep -v Regex | xargs -I {} rmdir {},find recurs all folder in current folder which path not contain _REGEX string and remov onli one without file and anoth folder within
+echo Regex | cat,print _REGEX _REGEX
+dig Regex Regex,save short dns lookup output of _REGEX to _REGEX variabl
+ps -a -u Regex | awk Program | xargs -I {} pstree {},print process tree for each process own by user _REGEX
+find Path -amin +Quantity -amin -Quantity,find all _FILE under _FILE directori tree that been access in last _NUMBER to _TIMESPAN
+find Path -perm Permission,find all file in home directori with open permiss
+find Path -maxdepth Quantity -type d,find all level _NUMBER subdirectori of current directori
+gzip -c mysqldbbackup.sql | uuencode mysqldbbackup.sql.gz | mail -s MySQL DB backup@email.com,compress _FILE with gzip and email it with subject _REGEX to _FILE
+date +%a | tr Regex Regex,save small letter short day name of week to variabl _REGEX
+find / -name myfile -type f -print 2> /dev/null,search system for regular file _REGEX ignor permiss deni error
+ls -hal /root/ > /root/test.out,print long list of content in a root folder includ hidden file with human-read size and store output to _FILE file
+"$( date -u -d Regex +""%s"" )",repres utc date given in time string _FILE as number of second sinc epoch and save it in _REGEX variabl
+curl -s http://page.that.serves.json.com/json/ | json_xs,download content from _DIRECTORY and format it as _FILE
+find Path -type d | cpio -p -d -v -m Regex,copi directori hierarchi of current directori to _REGEX
+find . -iname *.jar | xargs -n1 zipinfo,list detail inform about all _FILE file in current directori tree
+mktemp --dry-run Regex,creat _REGEX random file name and save it in _REGEX variabl
+find /target/path -type f -exec your_command_here {} ;,execut script _REGEX for each file from directori tree _FILE pass filenam as an argument to script
+ls -l File,list file descriptor of a current process
+ifconfig Regex | sed -n Program,get ip address of _REGEX network interfac
+ssh -l Regex -p Regex Regex,ssh into _REGEX on port _NUMBER as user _REGEX
+ps aux,show process for all user _FILE and those not attach to a termin
+find . -name .git -prune -o -type f -exec perl -i -pe s/\Q$1\E/\L$2\E/i {} +,find all file under current directori without descend into _FILE directori and replac match of regex _REGEX with _REGEX in those file where _REGEX and _REGEX will be expand in current shell
+find Path Path -name Regex -type f -exec chmod Permission {} \;,chang permiss of _FILE file under directori htdoc and cgi-bin to _NUMBER
+which -a Regex,print all match command in _REGEX for command _REGEX
+sort File | uniq | cut -f Number -d Regex | uniq -c | rev,find all instanc of first column with uniqu rest of line and output a count for each first column that found in uniqu line
+find Path -name Regex -type f -exec wc -l File \;,count number of line in everi regular _FILE file in current directori tree
+bzip2 -k File,compress file _FILE keep origin file in place
+find Path -iname Regex,display all _FILE in current folder
+find Path -type f -perm -Permission,find all file under _FILE with _NUMBER permiss
+setarch `uname -m` -R ./yourProgram,run _FILE without address space random report actual machin type
+find . -type f -maxdepth 1 ! -name .* -exec printf %.0s.\n {} + | wc -l,find all regular file in current folder exclud sub directori and hidden folder and display count
+find Path -name Regex -type d -exec rm -r {} \;,remov all directori call _REGEX from current directori tree
+for d in /home/*/; do find $d -type d -name bin | grep -q . || echo $d; done,find all top level directori under _FILE that doesn 't contain a file or directori name _FILE
+shred -v -n File -z -u File,overwrit file _FILE with zero and remov show progress while execut
+find Path -maxdepth Quantity -empty -not -name Regex,list onli non-hidden empti file onli in current directori
+ssh -t Regex command,ssh into _REGEX with forc pseudo-termin alloc execut _REGEX and save output to variabl _REGEX
+find Path -name Regex -type f -exec cp --parents {} File \;,find _FILE file in _FILE directori recurs and copi them to directori _FILE
+find Path -type f -perm -Permission -printf '%p has world write -permissions\n',find file with _NUMBER permiss in entir file system and print them with string _REGEX append after everi path
+find Path -type f \( -iname Regex -or -iname Regex \),use find command to search for _FILE and _FILE file
+mount | sed -n -e Program,print path of all network mount
+yes | cat -n | head - Quantity | awk Program,print everi _REGEX line from _NUMBER line of _REGEX with line number
+find Path -type f -name Regex -execdir rename Regex {} \;,find all regular _FILE file under and below _FILE and renam them prefix name with _REGEX
+find Path -name Regex -print0 | xargs -0 -I {} grep -n -H Regex {},search _FILE file found in current directori tree for string _REGEX
+stat --printf=%y %n\n $(ls -tr $(find * -type f)),recurs list all file in a current folder and print full path along with modif time
+source <( echo Regex ),set variabl _REGEX to _NUMBER
+find Path -type f -printf '%T@ %p\n' | sort -n -r | head - Quantity | cut -f Number -d Regex | sed -e Program | xargs -I {} ls -U -l {},print _NUMBER latest modifi file within current directori
+find Path -name Regex -type f,find all file under current directori match pattern _FILE in name
+find . -type f -exec printf %.0sbla\n {} +,find all regular file in current directori and display file name with new line as delimit
+find Path -type f | xargs -I {} md5sum {} | sort | uniq -D w32,list all file with path that ident content
+split --number Quantity File Regex,split _REGEX into _NUMBER file with about equal number of line each and use prefix _REGEX
+find Path -type f -printf '%20s %p\n' | sort -n | cut -b Number | tr Regex Regex | xargs -0 -I {} ls -l -a -S -r {},search current directori recurs for largest file
+find Path -nouser -exec chown Regex {} \;,chang all file with no user under _FILE to owner _REGEX and group _REGEX
+find Path -type f -exec chmod Permission {} +,set permiss to _NUMBER for all regular file in current directori tree
+rsync File File,copi all file in _FILE to _FILE on host _FILE authent as user _REGEX
+find Path Path -name Regex -print,find all file and directori name _FILE under _FILE and _FILE directori tree
+find Path -iname Regex -type f -exec sed Program -i Regex {} \; -exec rm File \;,find _FILE _REGEX file with bom and correct them
+find Path -mindepth Quantity -name Regex,search for file specifi minimum depth of search
+find ~/container -mindepth 3 -type f | while read file; do mv $file $(dirname $file)/..; done,find all regular file start from level _NUMBER of directori tree _FILE and move them one level up
+cat `find . -type f` > out.txt,display content of all regular file in current folder and save output to _FILE
+"ping host | perl -nle print scalar(localtime), "" "", $_",add a date time stamp to everi line of output in _REGEX
+mkdir Directory,make directori _FILE
+echo Regex | awk Program,trim lead and trail whitespac from variabl _REGEX
+ls -1 | perl -l40pe0,list all file in a current folder separ name with space
+file File,display human-read file type descript of _FILE
+sed Program File | split -d -l Quantity File Regex,add newlin befor all _REGEX and consequ occurr of _REGEX in file _REGEX and write each line from output to file with prefix _REGEX and numer suffix
+find Path -type l -name Regex -ls,list _REGEX link in _FILE directori with inod inform and file to which it point to
+find -P Path -type f | rev | cut -d Regex -f Number | rev | cut -d Regex -f Number | cut -d Regex -f Number | sort | uniq -c,display a count of regular file in each directori at current level
+find -L Path -type l,find all broken symlink under current directori
+uname -m | grep Regex,check if current system is run in _REGEX address
+find Path -name Regex,search directori tree _REGEX for _FILE file
+find Path -name Regex -exec grep -E Regex {} \;,search for _REGEX in all _FILE file under current directori
+find Path \( -name Regex -or -name Regex -or -name Regex \) -print | xargs -I {} chmod Permission {},find all _REGEX _REGEX and _REGEX file under current directori and chang permiss to _NUMBER
+find Path -name Regex -exec grep -w Regex {} \; -print | grep Regex,find all file in current folder end with _FILE and search for a word in all these file
+ln -s `canonical.bash foo` bar,creat a symbol link name _REGEX to file that name is a result of command _FILE _REGEX
+find Path -type d -maxdepth Quantity,search directori match pattern _FILE for level _NUMBER subdirectori
+find Path -mtime +Timespan -type f -size +Size -ls,find file with size more than _SIZE and which are more than _TIMESPAN old under _FILE directori
+find Path -type f -print0 | xargs -0 -I {} grep -E Regex {} | grep -E -v Regex,search current directori for file whose name start with _REGEX ignor svn git and _FILE file
+find ~ -type f ( -iname *.mp3 -o -iname *.ogg ) > mynewplaylist.m3u,make a playlist out of all _FILE and _FILE file in home directori
+sed -i $( whoami ) File,run sed command _FILE on _FILE where _REGEX is replac with current user name
+find Path -type d | grep -E -v Regex | less,find directori in _FILE and show onli those that doesn 't match regex _FILE
+find Path -atime -Timespan -name Regex,display all _FILE file in folder _FILE which been access in _TIMESPAN
+ssh Regex -l Regex,ssh into _REGEX with login name _REGEX
+find Path -xdev -inum Quantity | xargs -I {} rm {},delet all hard link to physic file with inod number _NUMBER
+echo $( basename $( dirname $( dirname Regex ) ) ),strip _NUMBER last section from path _REGEX and print basenam of rest part
+find Path -mtime +Timespan -mtime -Timespan,find all file in folder _FILE which been modifi between _NUMBER to _TIMESPAN ago
+pushd Directory,push current folder to directori stack
+mount | tail - Quantity | sed -e Program,print mount point of last mount drive
+find Path -iname Regex,find all file and directori under current directori match case insensit pattern _REGEX
+find Path -name Regex -user Regex,display all _FILE file in current folder which belong to user nobodi
+cowsay hello | rev,display a garbl ascii-art of a cow say _REGEX backward
+tmux set-option -g history-limit 10000,global set maximum number of line to held in window histori as _NUMBER
+echo $( seq Number ) | xargs -P Quantity -I {} -d Regex ping -W Quantity -c Quantity Regex | grep -E Regex,ping everi address from _FILE to _FILE with a timeout of _TIMESPAN and filter out no respons
+fold -w Quantity -s File,wrap each line in _REGEX to a maximum of _NUMBER charact break at space
+find Path -perm Permission,find all file and directori with _NUMBER permiss under current directori tree
+find Path -maxdepth Quantity -not -iname Regex,find all file that are not name _FILE in current directori onli and without regard to case
+find . ( -size 100 -o -size -100 ) -name *.html   -exec ls -l {} ; 2> /dev/null,find all _FILE file in current directori which size greater than _SIZE and display detail and discard all error
+find Path -name Regex -delete,find all _FILE file under _FILE and delet them
+find Path -ctime -Timespan -name Regex -print0 | xargs -r -0 -I {} mv -t Directory {},find _REGEX file and directori under _FILE directori whose status was chang less than _TIMESPAN ago and move them to _FILE
+chgrp Regex File,chang group ownership of _FILE to _REGEX
+find Path Path -name Regex,search all file and directori either of directori _FILE and _FILE which contain _REGEX anywher in file or directori name
+basename Regex | cut -d Regex -f -Number,take section of variabl _REGEX between last slash and follow dot if ani and store that section in variabl _REGEX
+find Path -size Size,find all _SIZE file
+find Path -type f -perm -Permission,find all file under _FILE with read-writ access for other
+grep $( cat File ) File,print all string from file _FILE match pattern in file _FILE
+find . -iname $srch* -exec grep Processed Files {} ; -print| sed -r N;s/(.*)\n(.*)/\2 \1/ > temp2,search for _REGEX in all _REGEX file under current directori run sed script _DIRECTORY on output and redirect final output to _REGEX file
+chown Regex File,chang owner and group of _FILE to _REGEX
+find Path -type d -name Regex,find all hidden directori start from current directori
+"find $DiskName -type f -mtime -3 -size +5000 -exec ls -ld {} ; 2>/dev/null | sort -n -k 5.1,5 >> $TMPFILE",sort all regular file in _REGEX directori which been modifi in _TIMESPAN and which are bigger than _SIZE base on size and save output to _REGEX
+find Path -name Regex -exec ls -s {} \;,list all file in _FILE directori tree whose name are _REGEX and size
+timex find /tmp -print|backup -ivqf/dev/null,creat a backup of all file in folder _FILE and display taken for oper
+mount | grep Regex,check if a drive is mount to nfs
+find Path -name Regex -exec sed -i -r Program {} \;,chang everi refer to colour red to green in all _FILE file
+yes | more,display an infinit number of line consist of _REGEX until user press q key
+find Path -type d -printf '%d:%p\n' | sort -n | tail - Quantity,return depth of current directori tree
+shopt extglob,show state of shell option _REGEX
+find Path -name Regex,find all read file in a folder
+cp -R File File,make a copi of entir content of subfold call _REGEX if testfold exist copi will be place within it
+ps -p $$ | tail -1 | awk {print $NF},print current shell
+find Path ! -perm Permission,find all file under directori tree _FILE whose permiss are not _NUMBER
+pushd $( whoami ),expand _REGEX as current user name and add result path to directori stack
+read -p Regex Regex,read a line from standard input with prompt _REGEX and save respons in variabl _REGEX
+readlink --canonicalize-existing File,save absolut path of script filenam in variabl _REGEX
+find Path -name Regex -prune -or -print,print all file and directori in _REGEX directori tree skip sccs directori
+find Path -name Regex,find all file with pattern _FILE
+paste File,print each line in parallel in file _FILE and _FILE
+find Path -type f -name Regex,display all regular file in current folder with name dummi
+find Path -type f -print0 | xargs -0 -I {} sed -i -e Program {},replac occurr of _REGEX with _REGEX onc per each line of file from current directori tree
+find Path -perm Permission | head,find all read onli file in entir file system and show a few line of output from begin
+head -n -Quantity File,remov last _NUMBER line from a file
+bzip2 -k -v File,verbos compress all file on third and fourth depth level keep origin file in place
+find Path -name Regex | sed Program | xargs -I {} cp File {},copi all file like _REGEX under current directori to _FILE directori
+ls -d File | cut -f Number -d Regex,list all of subdirectori in current directori with no trail slash
+find Path -name Regex -type f -exec sed -i Program -- {} \;,find all text file in current folder start with _REGEX and prepend first line
+pwd -P,save physic current work directori to variabl _REGEX
+echo Regex | od -t x1,print a hex dump byte to byte of output of _REGEX
+find Path -newer File,find all file newer than _FILE under and below current directori
+chmod -R Permission File,recurs set all permiss under _FILE to _NUMBER
+df -h,report file system disk space usag in human readabl format
+find Path -name Regex,find all _FILE file and directori under home directori
+comm -2 -3 File File,print uniqu line of _FILE compar to _FILE
+cut -d Regex -f Number File | xargs -I {} dig Regex {},take first text field from file _FILE as a domain name and get short a record for one
+mount -v | grep Regex | awk Program | xargs -I {} ls -l -s -R {},recurs list all file on smbfs mount
+"alias prettify_json=php -E $o = json_decode($argn); print json_encode($o, JSON_PRETTY_PRINT);",set alia _REGEX for command _REGEX
+sort -S Size File,sort _REGEX use a buffer with a size _REGEX of main memori
+find Path -type d -iname Regex,find all directori contain _REGEX in name under _FILE directori tree
+sed -n Program File,print all line in file that not match _REGEX
+command -1 <(gzip -dc file1.gz) -2 <(gzip -dc file2.gz),unzip file _FILE and _FILE as argument to _REGEX
+find Path -type d -print0 | tr Regex Regex,save a comma separ list of all directori under current directori tree to variabl _REGEX
+"find . -name *$lower1* -exec bash -c mv ""$1"" ""${1/$2/$3}"" -- {} $lower1 $lower2 ;",move all _REGEX file and directori under current directori to path form by replac match of _REGEX with _REGEX in path
+find Path -type f ! -perm -Permission,find all regular file in current directori tree that are not readabl by anyon
+find . -name *-GHBAG-* -exec bash -c mv $0 ${0/GHBAG/stream-agg} {} ;,chang word _REGEX to _REGEX in all file name in current folder which word _REGEX in name
+column -t -s Regex File,format file _FILE with no column delimit
+read -n Quantity -r -p Regex Regex,read a singl charact from standard input into variabl _REGEX without backslash escap and use prompt _FILE
+chown Regex File,chang owner of _DIRECTORY to _REGEX
+IFS= read -t 0.01 -d  -n1 keypress,unset if and read a singl charact from standard input with timeout of _TIMESPAN and save respons in variabl _REGEX
+"find -type f -name *.au | awk {printf ""%s %s\n"",$0,$0"".wav"" } | xargs sox",convert _FILE file to _FILE file use _REGEX
+tac File | sed Program | tac,replac second to last line of file
+echo Regex | xargs -I {} find {} -mindepth Quantity -maxdepth Quantity -type d,find all directori in level _NUMBER down _REGEX directori
+read -p Regex Regex,read a line from standard input into variabl _REGEX with prompt _REGEX
+find Path -name Regex -fprint File,search for file _REGEX in current folder and save output to same file
+find ~ -name Foto* > results.txt,save list of file in home directori tree whose name begin with _REGEX to _FILE
+cat message.txt | mail -s Backup -a mysqldbbackup.sql backup@email.com,send email with subject _REGEX and attach _FILE and messag in _FILE to _FILE
+find Path -type f \( -iname Regex -not -perm -Permission \),search for text file in current folder which not write access to other
+awk -F Regex Program <( zcat Regex ) <( zcat Regex ),decompress _FILE and _FILE and print line in _FILE that match _REGEX tab separ field in _FILE
+find Path -name Regex | xargs -I {} rm {},remov all text file from current folder
+find Path -type f -perm Permission | wc -l,count number of regular file with _NUMBER permiss under current directori tree
+find Path -mindepth Quantity -maxdepth Quantity -type d | grep Regex | tr Regex Regex | xargs -0 -I {} ln -s -t Directory {},find directori whose pathnam contain _REGEX at level _NUMBER of current directori tree and creat symlink to them in _FILE
+find $sourcePath -type f -mtime +10 -name *.log | xargs zip -jmT $zipFile -@,move all _FILE file under _REGEX that were modifi more than _TIMESPAN ago to a zip archiv _REGEX with onli file name
+cat File | cut -d Regex -f Number,print fourth column of space-separ data from text file _FILE
+find Path -maxdepth Quantity -type f,find all file in _REGEX directori without go into sub-directori
+find Path -follow -lname Regex,find broken symlink
+find Path | grep -E Regex | xargs -I {} rm -r -f {},recurs remov all file like _REGEX in a current folder
+find /path/to/folders/ -name *.emlx -print0 > filelist,print a null delimit list of all _FILE file and directori under _DIRECTORY to filelist
+find Path -type f -printf '%p %s\n' | awk Program,get total size of all file under current directori
+cd `which <file> | xargs dirname`,chang to directori of execut _REGEX
+chmod Permission -R File,recurs set all permiss under _FILE to _NUMBER
+tac | sed -n Program | tac,print a line _NUMBER line from line contain pattern
+kill $(ps -o pid= -s $(ps -o sess --no-heading --pid $(pgrep rsync ))),send sigterm signal to entir session of process contain process whose command match _REGEX
+mount | column -t,format output of _REGEX as a tabl
+find Path -name Regex | xargs -P Quantity -I {} rename Regex {},recurs search for all file with name end with _FILE renam them to end with _FILE use at most _NUMBER concurr process
+find Path -type d -name Regex -execdir tar -c -v -f File File \;,find all directori name _NUMBER in current directori tree and creat a tar archiv of _REGEX subdirectori
+find Path -type d -exec chmod Permission {} \;,chang permiss of all directori in current folder
+find Path -name Regex -type d,look for directori _REGEX
+find Path -name Regex -maxdepth Quantity -exec rm -f {} \;,delet file contain whitespac without recurs
+find Path -name Regex \( -exec echo {} \; -or -exec true \; \) -exec grep Regex {} \;,construct with addit _REGEX to be use if both command need to run regardless of success or failur
+mkdir Directory,make directori _FILE
+find Path -name Regex -print0 | xargs -0 -n Quantity -I {} dirname {} | sort | uniq,find all _FILE file and directori in entir file system and print sort and uniqu parent directori path
+find Path -type d ! -name Regex,display all file in current folder exclud directori aa
+cd $( readlink File ),chang directori to real path of current work directori of process _REGEX
+find Path -atime -Timespan,search for file that were access less than _TIMESPAN ago
+"find Path -name Regex -printf ""%f\n""",display all text file in current folder
+tail -n 1 $file | tee >(wc -c | xargs -I {} truncate $file -s -{}),truncat file _REGEX remov last line from it and print file on stdout
+find Path -mtime -Timespan,find all file and directori under _FILE directori tree which been modifi within _TIMESPAN
+md5sum File,print _REGEX messag digest of _FILE
+bar file1 | wc -l,count line in file _REGEX and show progress bar while
+find /stuff -type d -printf %P\0 | xargs -0 script.py,search for all directori in a folder and limit search to current folder and give them as input to python script
+yes | tr \n x | head -c $BYTES | pv | grep n,use _REGEX amount of ram show current and total rate of consumpt
+info Regex Regex Regex Regex Regex,open menu item _REGEX _REGEX _REGEX _REGEX _REGEX _REGEX _REGEX in _REGEX manual
+find Path -name Regex -print,search entir file system for file _FILE
+find Path Path Path -name Regex -type f | xargs -I {} chmod +Permission {},set execut bit for all user on all _FILE script from directori tree lib etc debian
+find . -exec myscript {} +,find all file and directori in current directori and execut myscript with minim invoc for those file and directori
+jobs -s -l | awk Program,print all pid of stop process
+find Path -newermt $( date +%Y-%m-%d -d Regex ) -type f -print,print file _FILE in _TIMESPAN
+cat File | xargs -I {} -d Regex -n Quantity grep -r {},recurs find string in all file under current directori that match with comma-separ pattern list in file _REGEX
+find /etc -type f | xargs --max-lines=1 -r --max-procs=20 ./do1.sh,execut script _FILE on each regular file from _FILE directori tree
+find Path -type f Path | grep -v Regex,find writabl regular file omit those that contain _FILE in name
+find Path -mindepth Quantity -type f,find all file under minimum _NUMBER level down current directori
+find Path -name Regex -print -or -name Regex -print,display all header file and _FILE file in current folder
+history | grep Regex,search for _REGEX in histori
+find Path -exec chmod Permission {} \;,set read write and execut permiss for all for file and directori in foldernam directori tree
+find Path -name Regex -type f,search _FILE directori recurs for regular file name _REGEX
+env | uniq | sort -r | grep Regex,show all variabl whose name or valu contain _REGEX sort in revers alphabet order
+(find . -type f -ctime $FTIME && find . -type f -atime $FTIME && find . -type f -mtime $FTIME) | sort | uniq,list file under current directori which were modifi access or whose status were chang _REGEX ago and sort them and remov duplic entri
+brew info grc,display inform about src formula
+sort File | rev | uniq -f Quantity | rev,sort _FILE ignor last _NUMBER charact of each line
+pushd $( dirname $( which Regex ) ),push directori contain first exist command found in all argument to directori stack
+find Path -perm -Permission,find all file on system that are world writeabl
+find Path $( uname -r ) -regex Regex,find all loadabl modul for current kernel whose name includ _REGEX
+join <( sort File ) <( sort File ) | sort -k Number,join line in file _REGEX with line in file _REGEX if line share a common first word and sort result numer
+find Path -name Regex,find all file call _FILE that resid under and below _DIRECTORY
+cd Directory,go to _FILE directori
+less $( find Path -maxdepth Quantity -type f -daystart -mtime -Timespan ),show file in maximum _NUMBER level down current directori that were modifi less than _TIMESPAN ago from _DATETIME
+wc $( find Path -name Regex ),print newlin word and byte count for all _FILE _FILE _FILE _FILE and _FILE file under current directori tree and also show total count
+find . -type f -name *.ext $(printf ! -name %s  $(cat list.txt)),display file end with _FILE in current folder exclud those that are present in list _FILE
+dig Regex Regex | awk Program,print all ns server of domain _FILE
+find Path -type f -print0 | xargs -0 -I {} chmod Permission {},find all file under _FILE and chang permiss to _NUMBER
+su - username command,run command _REGEX as user usernam with a full login simul
+find Path -type d -name Regex -exec rm -r -f {} \;,find all directori with name _REGEX in current folder and forc delet them
+find /. -name toBeSearched.file 2>/dev/null,find a file in current folder and discard error
+dig Regex -f File,read lookup request from text file _FILE and use them to fetch _FILE record
+find Path -name Regex -print0 | xargs -0 -n Quantity -I {} mv {} File,move all _FILE file from current directori tree to _DIRECTORY
+find Path -type f -print | sed Program,find all file under current directori and replac match of regex _FILE with _REGEX in everi line of output
+find / -name grub.conf >& /dev/null,find _FILE file in entir file system discard error in csh or tcsh shell
+find Path | cpio -p -m -u -d Regex,copi all file uncondit and directori in directori tree _REGEX to _REGEX preserv directori hierarchi and modif time
+find Path -type f -name Regex,find all _REGEX _REGEX regular file under current directori
+find Path -type f -name Regex | awk Program | bash,convert _FILE file to _FILE file use _REGEX
+find Path -mtime +Timespan,find everi file under directori _FILE that was modifi more than _TIMESPAN ago
+find -maxdepth 1 -type d | sort | while read -r dir; do n=$(find $dir -type f | wc -l); if [ $n -gt 0 ]; then printf %4d : %s\n $n $dir; fi; done,find list of directori with non-zero file count
+who | awk Program | sed -e Program,print login inform of all user except first _NUMBER and replac all instanc of _REGEX with _REGEX
+find Path -name Regex -type f -exec chmod Permission {} \;,chang permiss to _NUMBER for _FILE file under _FILE
+find . -name *.txt | while IFS= read -r FILE; do echo Copying $FILE..; cp $FILE /destination; done,copi all _FILE file from current directori tree to _FILE
+find Path -type f -empty,display all empti file in folder _FILE
+find . -user <userid>,get list of file own by _REGEX
+find Path -name Regex -delete,remov all _FILE file from current directori tree
+find . -type f -wholename *.mbox -print0 | parallel -0 mv {} {.},find regular file under current directori whose name end in _FILE pipe output to gnu parallel command that will renam each file to not a file extens
+find Path \( -name Regex -or -name Regex -or -name Regex -or -name Regex -or -name Regex \) -print0 | xargs -0 -I {} wc {},count line of _FILE or _REGEX or obj-c or _FILE code under current directori
+find `gen_root_dirs.sh` -type f -size 0 -ls,list all file which size _SIZE in some directori
+find Path ! -name Regex,find all file and directori that not contain _REGEX in name under current directori tree
+alias -s py=$EDITOR,set alia _FILE for command _REGEX
+find Path -name Regex -print | xargs -I {} sed -i Program {},replac _REGEX with _REGEX in all _FILE file in current directori tree
+find Path -fstype ext2 -name Regex -print,find file and directori name _REGEX in _REGEX partit in entir filesystem
+find Path -user Regex -iname Regex,search specifi user for given _REGEX
+bind -p | grep -a Regex,filter output of bind _REGEX by regex
+echo $( pwd ) | crontab,set a crontab to creat or updat timestamp of _REGEX in current directori everi minut
+mktemp -t Regex,creat temporari file by templat provid in option _REGEX
+find Path -type f -size +Size | xargs -I {} du -s -h {},show disk use of all regular file in current folder which are bigger than _SIZE
+find Path -maxdepth Quantity -name Regex -print0 | xargs -0 -I {} zcat {} | awk -F Regex Program,find file that end in _FILE and execut _REGEX on unzip content
+"cal 02 2012|perl -F(.{1,3}) -anEBEGIN{$,=""\t&"";$\=""\t\\\\\n""}$.==1||eof||do{$i//=@F;print@F[map{$_*2-1}(1..$i/2)]}",convert unix _REGEX output to latex tabl code
+find Path \( -name Regex -or -name Regex \) -exec rm {} \;,remov all file name _REGEX and _REGEX
+ln -s File Regex,creat a symbol link in _DIRECTORY to _FILE
+hostname | tr Regex Regex | tr -d Regex | awk Program,save number of record in system hostnam that contain number in variabl _REGEX
+find Path -path Regex -prune -or -type f -name Regex,display all _FILE file in current folder exclud search in path _FILE
+find Path -mtime +Timespan -exec rm {} \;,delet all file under _FILE directori tree that were modifi more than _TIMESPAN ago
+find /some/dir/ -type f > somefile,find all regular file in folder _FILE and save output to file _REGEX
+echo $( pwd ),print current work directori and base name of _REGEX
+find Path -type f | xargs -I {} grep Regex {},find text in whole directori tree
+dig -x Regex | awk Program,get domain name with _REGEX from dig revers lookup
+find -x data -name filepattern-*2009* -print0 > filesOfInterest.txt,print a list of all _REGEX file and directori under data directori to _FILE file
+find Path -mtime Timespan,find all file under _FILE directori tree which been modifi exact _TIMESPAN ago
+echo $[4/0] || exit $?,if first command fail exit from script with exit code of fail command
+find Path -type f -name Regex,find all _FILE file in current directori tree
+ls -1 -b | tr Regex Regex,list all file in a current folder separ name with semicolon
+column -x <<< $(printf '%s\n' $module),print variabl _REGEX in format row
+find ./ -name *~ | xargs> rm,find all _REGEX file under current directori and delet them
+yum search mysql | grep client,search avail packag with _REGEX and _REGEX in name
+ping Regex -I Regex -c Quantity,send one ping request to host whose name or ip address is specifi by variabl _REGEX use network interfac _REGEX
+mv File File,renam _REGEX to _REGEX
+diff --suppress-common-lines --speed-large-files -y File1 File2 | wc -l,find number of differ row between _REGEX and _REGEX
+find Path -name Regex,search for all non-hidden file
+diff -u Quantity File | grep -E Regex,compar file _REGEX and _REGEX with _NUMBER line of unifi context and print line begin with _REGEX
+find Path -type f -iname Regex -exec ls -l -r -t {} \; | awk -F Regex Program,find onli permiss field _REGEX file name from long list with find command
+find Path -name Regex -prune -or -print,display all file in current directori exclud those that are in _REGEX directori
+su - username,login as user usernam
+cat File | od -c,display _REGEX as printabl charact or backslash escap
+tr -d \n\r < yourfile.txt,delet _REGEX from _FILE
+find Path -perm Permission,find all file and directori in entir file system for which owner _FILE permiss or group at least execut permiss or other at least execut permiss
+mkdir Directory,make directori name in variabl _REGEX with _FILE strip from end
+echo Regex | rev | cut -d Regex -f Number | rev,output onli filetyp suffix of _FILE in case _FILE
+find Path -type d -exec ls -a -l -g -d {} \;,display a long list of all directori in current folder
+find Path -ok tar -r -v -f File {} \;,tar all file in current folder and ask for user confirm befor creat tar ball
+find Path -type f -daystart -mtime Timespan,find all file that been modifi _DATETIME
+chmod -R -f Permission File,recurs add user write permiss to all file under _FILE
+grep -q tar archive <<<$filetype,quiet search pattern in a given string exit with _NUMBER status if ani match is found otherwis exit with non-zero
+find Path -name Regex,search system for file whose name begin with letter _REGEX _REGEX or _FILE
+find Path -mtime +Timespan -type d -exec rmdir {} \;,delet folder like _FILE or deeper older than _TIMESPAN if _REGEX contain file or other folder
+find Path -type f -perm Permission -exec ls -l {} \;,list regular file in current directori with read write and execut permiss for all user and also show permiss
+find Path -group Regex,find all file that belong to group develop
+tail -n +Quantity File | split -l Quantity File Regex,split _FILE exclud first line into file of at most _NUMBER line each and with a prefix _REGEX
+find Path -name Regex | xargs -I {} grep -E Regex {},search for _REGEX in all _FILE file under current directori
+watch -d ls -l,execut _REGEX everi _TIMESPAN and highlight differ in run
+"tar tzvf archive.tar.gz | sed s/ \+/ /g | cut -f3 -d  | sed 2,$s/^/+ / | paste -sd  | bc",sum total content size of extract file in _FILE
+find Path \( -type d -name Regex -prune \) -or \( -type f -name Regex -print \),display all file in current folder exclud those that are present in sub directori aa and display those file that start with word _REGEX
+find Path -name Regex -execdir diff -u {} File \;,compar each _FILE header file in or below current directori with file _FILE
+find Path -type d -atime +Timespan,display all directori in current folder for file which not been access in _TIMESPAN
+mkdir dir2; find dir1 ( -type l -o -type f ) -not -wholename */exclude/* -exec cp -P --parents {} dir2/ ;,copi entir directori structur from _REGEX as a subdirectori of _REGEX omit empti directori special file and ani directori name _REGEX
+cd -L Directory,chang directori to parent directori and not resolv ani symlink in result path
+find /path/to/dir -name *.pdf -exec convert -thumbnail x80 {}[0] {}-thumb.png ;,creat thumbnail from first page of each _FILE file under _FILE
+(find $DIR/tmp/daily/ -name *.tar.gz | sort -n | head -2,find all _FILE file in a folder and sort them accord to name and display first _NUMBER file
+find Path -size +Size,find file and directori that are bigger than _SIZE in size user _FILE directori tree
+find Path -name Regex,search _FILE directori tree for directori and file call _FILE
+find Path -type f -name Regex | sed Program | sed Program | sh,move all _REGEX file under _FILE to _REGEX file under same directori
+nl -n rz -w Quantity -s Regex File | sed -r Program,remov _NUMBER add a _REGEX line number and rearrang date for each line in _REGEX
+find Path -type f -name Regex -or -name Regex -or -name Regex -or -name Regex -or -name Regex -or -name Regex,search home directori tree for video file
+less -p Regex File,page through content of file _REGEX posit view at first occurr of regular express _REGEX
+find Path -type f -regex Regex,search home directori tree for video file
+info Regex --index-search Regex,open gcc info manual and goe to a node point by index entri _REGEX
+find Path -print | xargs -I {} chown Regex {},chang owner of all file in folder _FILE to nextint
+find Path -type f \( -name Regex -or -name Regex \) -exec wc -l {} +,show number of line for each _FILE and _FILE file in current directori tree
+kill $( jobs -p ),kill all job
+find . -maxdepth 1 | sort > a,find all file and directori _NUMBER level down current directori and redirect sort output to file a
+yum install -y nodejs,instal packag _REGEX answer _REGEX on all question
+"find Path -type d -printf ""newdir/%P\0"" | xargs -0 -I {} mkdir -p {}",copi directori structur from directori _REGEX to _REGEX
+scp -r File,recurs copi directori or file _FILE on host _REGEX to current directori on local host connect as ssh user match usernam on local host
+zcat biglogfile.gz | split -l500000 --filter=gzip > $FILE.gz,split _FILE into chunk of _NUMBER line gzip compress file
+find path/to/folder -type f -print0 | sort -z | xargs -0 cat | sha1sum,calcul _REGEX sum for content of regular file in _FILE directori tree
+find Path -name Regex,find file with a question mark in name
+sudo find . ( -name *.log -o -name *.trc ) -mtime -1 | sudo xargs ls -ltr --color | less -R,recurs find all file like _FILE and _FILE in a current folder modifi in a _TIMESPAN sort list by modif time and pipe output to pager tool _REGEX
+find Path -name Regex -execdir rename Regex {} \;,search for file _FILE in current folder and renam it to _FILE
+find Path -newer File,search for all file in folder _FILE which are modifi after _FILE
+grep -n -i Regex File | wc -l,count line with all-cas word _REGEX in file _FILE
+pstree | cat,print process tree adjust output width with a screen size
+find Path -name Regex | tail - Quantity | xargs -I {} rm {},find file in and below current directori whose name begin with _REGEX and remov one of them
+top -l 1 | grep $app_name,collect process inform and display onli line contain pattern specifi by variabl _REGEX
+find . 2>&1 | grep -v Permission denied > some_file,find all file under current directori redirect error messag to output and filter ani line contain text _REGEX write remain output to _REGEX
