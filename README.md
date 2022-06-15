@@ -1,8 +1,8 @@
 # Code For "BASHEXPLAINER: Retrieval-Augmented Bash Code Comment Generation based on Fine-tuned CodeBERT"
 
-![](C:/Users/yg/Desktop/Hybrid-ExplainBash/figs/BASHEXPLAINER.png)
+![](./figs/BASHEXPLAINER.png)
 
-[[中文版]()]
+[[中文版](https://github.com/NTDXYG/BASHEXPLAINER/blob/main/README_zh.md)]
 
 ## Ⅰ DataSet
 
