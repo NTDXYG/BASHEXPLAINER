@@ -1,6 +1,6 @@
 # Code For "BASHEXPLAINER: Retrieval-Augmented Bash Code Comment Generation based on Fine-tuned CodeBERT"
 
-![](figs\BASHEXPLAINER.png)
+![](./figs/BASHEXPLAINER.png)
 
 ## Ⅰ 数据集
 
