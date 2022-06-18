@@ -31,3 +31,13 @@
 ​		We open source the model parameters of the second phase of the training and download them at: https://drive.google.com/file/d/1iv9PLVgj4iXmhW0EjCf9w5u-A2Zl2DxT/view
 
 ​		Download it and place it under the **'pretrained_model/second_stage'** path, then run **run.py** directly, which contains the code to generate the test set and the code example to generate a single bash comment.
+
+## Ⅵ Comparison results (with the experimental results of different dataset split)
+
+![](./figs/result.png)
+
+
+## Ⅶ Human Study Example
+
+![](./figs/human.png)
+
