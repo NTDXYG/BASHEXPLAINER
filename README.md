@@ -34,7 +34,17 @@
 
 ## Ⅵ Comparison results (with the experimental results of different dataset split)
 
-![](./figs/result.png)
+Experimental results in the paper:
+
+![](./figs/round1.PNG)
+
+Experimental results of disrupting data set 1:
+
+![](./figs/round2.PNG)
+
+Experimental results of disrupting data set 2:
+
+![](./figs/round3.PNG)
 
 
 ## Ⅶ Human Study Example
