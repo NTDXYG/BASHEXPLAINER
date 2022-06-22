@@ -32,8 +32,17 @@
 
 ## Ⅵ 对比结果（加上了多次划分数据集的实验结果）
 
-![](./figs/result.png)
+论文中的实验结果：
 
+![](./figs/round1.PNG)
+
+打乱数据集的实验结果1：
+
+![](./figs/round2.PNG)
+
+打乱数据集的实验结果2：
+
+![](./figs/round3.PNG)
 
 ## Ⅶ Human Study 示例
 
