@@ -34,20 +34,22 @@
 
 ## Ⅵ Comparison results (with the experimental results of different dataset split)
 
-Experimental results in the paper:
+We randomly split our datasets three times with different random seeds. The detailed comparison result are shown as follows  and the comparison results confrm the effectiveness of our proposed method.
+
+Comparison result with the first data split(recorded in the paper):
 
 ![](./figs/round1.PNG)
 
-Experimental results of disrupting data set 1:
+Comparison result with the second data split:
 
 ![](./figs/round2.PNG)
 
-Experimental results of disrupting data set 2:
+Comparison result with the third data split:
 
 ![](./figs/round3.PNG)
 
 
-## Ⅶ Human Study Example
+## Ⅶ A sample of  questionnaire used in our human study
 
 ![](./figs/human.png)
 
